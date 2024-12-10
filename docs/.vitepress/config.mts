@@ -43,6 +43,15 @@ export default defineConfig({
       next: '下一页',
     },
 
+    //最后更新时间
+    lastUpdated: {
+      text: '最后更新于',
+      // formatOptions: {
+      //   dateStyle: 'short', // 可选值full、long、medium、short
+      //   timeStyle: 'medium' // 可选值full、long、medium、short
+      // },
+    },
+
     // 搜索
     search: {
       provider: 'algolia',
