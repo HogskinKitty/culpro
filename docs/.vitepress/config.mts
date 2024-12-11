@@ -16,7 +16,6 @@ export default defineConfig({
   // 头部
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}],
-    ['script', {src: '/live2d.js'}],
   ],
 
   // 最后更新时间

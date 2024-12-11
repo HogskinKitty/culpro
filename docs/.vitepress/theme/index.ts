@@ -1,39 +1,56 @@
 /* .vitepress/theme/index.ts */
 import DefaultTheme from 'vitepress/theme'
 import './style/index.css'
-import {useLive2d} from 'vitepress-theme-website'
 
 export default {
   extends: DefaultTheme,
 
-  setup() {
+  // 看板娘
+  // @ts-ignore
+  async enhanceApp() {
 
-    // 看板娘
-    useLive2d(
-        {
-          enable: true,
-          model: {
-            // 黑猫
-            // url: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/hijiki/hijiki.model.json'
+    // @ts-ignore
+    if (!import.meta.env.SSR) {
 
-            // 白猫
-            url: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/tororo/tororo.model.json'
-          },
-          display: {
-            position: 'right',
-            width: '135px',
-            height: '300px',
-            xOffset: '35px',
-            yOffset: '5px'
-          },
-          mobile: {
-            show: true
-          },
-          react: {
-            opacity: 0.8
-          }
+      let modelPath: string;
+
+      if (true) {
+        modelPath = '/live2d-models/models/cat-black/model.json';
+      } else {
+        modelPath = '/live2d-models/models/cat-white/model.json';
+      }
+
+      // @ts-ignore
+      const {loadOml2d} = await import('oh-my-live2d');
+
+      loadOml2d({
+        statusBar: {
+          disable: true,
+          loadSuccessMessage: '麻麻酱我来咯',
         },
-    )
-
+        menus: {
+          disable: true,
+        },
+        dockedPosition: 'left',
+        models: [
+          {
+            path: 'https://model.oml2d.com/cat-black/model.json',
+            scale: 0.15,
+            position: [0, 20],
+            stageStyle: {
+              height: 350
+            }
+          },
+          {
+            path: 'https://model.oml2d.com/cat-black/model.json',
+            scale: 0.15,
+            position: [0, 20],
+            stageStyle: {
+              height: 350
+            }
+          },
+        ]
+      });
+    }
   }
 }
