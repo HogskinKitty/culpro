@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "CBPN"
+  name: "CULPRO"
   text: "耕耘更好的程序"
-  tagline: CBPN：Cultivate Better Program Notes
+  tagline: Cultivate Better Programs and Better Oneself.
   image:
     src: /logo.png
-    alt: CBPN
+    alt: CULPRO
   actions:
     - theme: brand
       text: 开始耕耘
@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: 搭建初衷
       link: /about
+    - theme: alt
+      text: GitHub
+      link: https://github.com/HogskinKitty
 
 features:
   - title: Feature A

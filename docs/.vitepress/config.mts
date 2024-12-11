@@ -8,7 +8,7 @@ export default defineConfig({
   lang: 'zh-CN',
 
   // 标题
-  title: "CBPN",
+  title: "CULPRO",
 
   // 描述
   description: "A VitePress Site",
