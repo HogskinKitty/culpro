@@ -32,6 +32,7 @@ export default {
           disable: true,
         },
         dockedPosition: 'left',
+        primaryColor: '#546ec5',
         models: [
           {
             path: 'https://model.oml2d.com/cat-black/model.json',
