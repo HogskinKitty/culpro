@@ -1,3 +1,2 @@
-/* .vitepress/theme/style/index.css */
-@import 'rainbow.css';
-@import 'var.css';
+@import './rainbow.css';
+@import './var.css';
