@@ -1,9 +1,26 @@
-/* .vitepress/theme/index.ts */
 import DefaultTheme from 'vitepress/theme'
 import './style/index.css'
+import mediumZoom from 'medium-zoom';
+import {nextTick, onMounted, watch} from 'vue';
+import {useRoute} from 'vitepress';
 
 export default {
   extends: DefaultTheme,
+
+  setup() {
+    const route = useRoute();
+    const initZoom = () => {
+      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
+      mediumZoom('.main img', {background: 'var(--vp-c-bg)'}); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+    };
+    onMounted(() => {
+      initZoom();
+    });
+    watch(
+        () => route.path,
+        () => nextTick(() => initZoom())
+    );
+  },
 
   // 看板娘
   // @ts-ignore
@@ -12,13 +29,13 @@ export default {
     // @ts-ignore
     if (!import.meta.env.SSR) {
 
-      let modelPath: string;
-
-      if (true) {
-        modelPath = '/live2d-models/models/cat-black/model.json';
-      } else {
-        modelPath = '/live2d-models/models/cat-white/model.json';
-      }
+      // let modelPath: string;
+      //
+      // if (true) {
+      //   modelPath = '/live2d-models/models/cat-black/model.json';
+      // } else {
+      //   modelPath = '/live2d-models/models/cat-white/model.json';
+      // }
 
       // @ts-ignore
       const {loadOml2d} = await import('oh-my-live2d');
