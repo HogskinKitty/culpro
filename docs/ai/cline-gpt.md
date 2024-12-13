@@ -2,7 +2,7 @@
 
 ## 1. 简介
 
-**Cline**
+### Cline
 
 Cline（原名 Claude Dev）是一款 VSCode 插件形式的编程助手。
 
@@ -12,13 +12,13 @@ Cline（原名 Claude Dev）是一款 VSCode 插件形式的编程助手。
 
 - 支持 OpenRouter、Anthropic、OpenAI、Google Gemini 等多种 API 提供商，可配置任何兼容 OpenAI 的 API，也支持通过 Ollama 使用本地模型。
 
-**LiteLLM**
+### LiteLLM
 
 LiteLLM 是 BerriAI 开发的开源 Python 库，能简化大语言模型 API 调用，有统一接口、标准化输入输出、重试回退逻辑、支持预算与速率限制、异步调用、流式传输及日志功能等。
 
 支持超 100 种 LLM 服务，适用于多种自然语言处理相关场景。
 
-**GPT-4o API**
+### GPT-4o API
 
 OpenAI 官方 GPT-4o API 是收费的，由 GitHub Models 提供的 GPT-4o API 是免费使用，但有额度限制。
 详细情况见 [GitHub Models 速率限制](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits)
@@ -34,31 +34,31 @@ OpenAI 官方 GPT-4o API 是收费的，由 GitHub Models 提供的 GPT-4o API �
 
 - 进入 [GitHub Models](https://github.com/marketplace/models/catalog)，选择模型 OpenAI GPT-4o
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-1.png)
+![litellm-1](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-1.png)
 
 - 点击右上角 Get API key，然后选择 Get developer key
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-2.png)
+![litellm-2](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-2.png)
 
 - 点击 Generate new token，选择 Generate new token(classic)
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-3.png)
+![litellm-3](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-3.png)
 
-- 自定义一个名称，选择过期时间为永不过期即 No expiration，点击 Generate **token**
+- 自定义一个名称，选择过期时间为永不过期即 No expiration，点击 Generate token
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-4.png)
+![litellm-4](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-4.png)
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-5.png)
+![litellm-5](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-5.png)
 
 - 然后将生成的 token，也就是后面需要使用的 api_key，请自行保存一份，因为只会显示一次
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-6.png)
+![litellm-6](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-6.png)
+
+**api_base：** <https://models.inference.ai.azure.com>
+
+![litellm-7](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-7.png)
 
 ## 3. 安装 LiteLLM
-
-**api_base：** https://models.inference.ai.azure.com
-
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-7.png)
 
 ### **方式一：Docker**
 
@@ -75,7 +75,7 @@ model_list:
 
 > [!WARNING]
 >
-> 注意：这里的 model 必须是 `github/` 开头，如：github/gpt-4o，以此类推
+> 这里的 model 如果是 GitHub 提供的必须是 `github/`开头，如：github/gpt-4o，以此类推
 >
 > 其他模型请参考 [LiteLLM 官方文档](https://docs.litellm.ai/docs/providers/)
 
@@ -120,7 +120,7 @@ model_list:
 
 > [!WARNING]
 >
-> 注意：这里的 model 必须是 `github/ `开头，如：github/gpt-4o，以此类推
+> 这里的 model 如果是 GitHub 提供的必须是 `github/`开头，如：github/gpt-4o，以此类推
 >
 > 其他模型请参考 [LiteLLM 官方文档](https://docs.litellm.ai/docs/providers/)
 
@@ -132,34 +132,25 @@ litellm --config ./config.yaml
 
 ## 4. 安装 Cline 插件
 
-**VSCode 安装 Cline 插件**
+### VSCode 安装 Cline 插件
 
 VSCode 插件市场搜索 Cline 安装
 
-**配置大模型 API**
+### 配置大模型 API
 
 - API Provider：选择 OpenAI Compatible
 - Base URL：默认是 localhost:4000 ，如有修改端口，请根据实际情况填写
 - API Key：随意，因为在之前的 config.yaml 中已经配置
 - Model ID：根据自己选择模型的来填写
 
-![](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-8.png)
+![litellm-8](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/litellm-8.png)
 
 至此你应该可以愉快的使用 Cline + GPT-4o 来实现免费版的 Cursor，轻轻松松写代码
 
-**如有问题**
+## 5. 如有问题
 
 - 请参考官方说明文档：[LiteLLM 文档](https://docs.litellm.ai/docs/)
 
 - [提交 Issue](https://github.com/HogskinKitty/litellm-config/issues)
 
 - WX 联系：HogskinKitty
-
-
-
-
-
-
-
-
-
