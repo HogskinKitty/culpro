@@ -67,8 +67,14 @@ export default defineConfig({
     // 侧边栏文字更改(移动端)
     sidebarMenuLabel: '目录',
 
-    //返回顶部文字修改(移动端)
+    // 返回顶部文字修改(移动端)
     returnToTopLabel: '返回顶部',
+
+    // 页脚
+    footer: {
+      message: '',
+      copyright: 'Copyright © 2024 HogskinKitty'
+    },
 
     // 搜索
     search: {
