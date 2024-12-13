@@ -1,6 +1,6 @@
-import {defineConfig} from 'vitepress'
-import {sidebar} from './sidebar'
-import {nav} from './navbar'
+import { defineConfig } from 'vitepress'
+import { sidebar } from './sidebar'
+import { nav } from './navbar'
 
 
 export default defineConfig({
@@ -10,16 +10,29 @@ export default defineConfig({
   // 标题
   title: "CULPRO",
 
+  // 站点地图
+  sitemap: {
+    hostname: 'https://hogskinkitty.ftp.sh/',
+  },
+
   // 描述
   description: "A VitePress Site",
 
   // 头部
   head: [
-    ['link', {rel: 'icon', href: '/favicon.ico'}],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
   // 最后更新时间
   lastUpdated: true,
+
+  // markdown配置
+  markdown: {
+    image: {
+      // 开启图片懒加载
+      lazyLoading: true
+    },
+  },
 
   // 主题配置
   themeConfig: {
@@ -36,20 +49,26 @@ export default defineConfig({
       label: '本页内容',
     },
 
-    //自定义上下页名
+    // 自定义上下页名
     docFooter: {
       prev: '上一页',
       next: '下一页',
     },
 
-    //最后更新时间
+    // 最后更新时间
     lastUpdated: {
       text: '最后更新于',
-      // formatOptions: {
-      //   dateStyle: 'short', // 可选值full、long、medium、short
-      //   timeStyle: 'medium' // 可选值full、long、medium、short
-      // },
+      formatOptions: {
+        dateStyle: 'short', // 可选值full、long、medium、short
+        timeStyle: 'medium' // 可选值full、long、medium、short
+      },
     },
+
+    // 侧边栏文字更改(移动端)
+    sidebarMenuLabel: '目录',
+
+    //返回顶部文字修改(移动端)
+    returnToTopLabel: '返回顶部',
 
     // 搜索
     search: {
@@ -101,8 +120,9 @@ export default defineConfig({
       }
     },
 
+    // 社交链接
     socialLinks: [
-      {icon: 'github', link: 'https://github.com/HogskinKitty/culpro'}
+      { icon: 'github', link: 'https://github.com/HogskinKitty/culpro' }
     ]
   }
 })
