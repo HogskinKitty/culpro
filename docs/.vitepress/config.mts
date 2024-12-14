@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { nav } from './navbar'
 
-
 export default defineConfig({
   // 语言
   lang: 'zh-CN',

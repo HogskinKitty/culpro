@@ -1,9 +1,9 @@
-import type {DefaultTheme} from 'vitepress'
+import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   // 定义基础路径
-  '/java/': {base: '/java/', items: sidebarJava()},
-  '/ai-llm/': {base: '/ai-llm/', items: sidebarAiLLM()},
+  '/java/': { base: '/java/', items: sidebarJava() },
+  '/ai-llm/': { base: '/ai-llm/', items: sidebarAiLLM() },
 }
 
 // Java
@@ -12,13 +12,13 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
     {
       text: 'Java 基础',
       items: [
-        {text: '示例内容', link: 'basic'},
+        { text: '示例内容', link: 'basic' },
       ],
     },
     {
       text: 'JVM',
       items: [
-        {text: '示例内容', link: 'jvm'},
+        { text: '示例内容', link: 'jvm' },
       ],
     },
   ]
@@ -30,7 +30,7 @@ function sidebarAiLLM(): DefaultTheme.SidebarItem[] {
     {
       text: 'AI 编程',
       items: [
-        {text: 'Cline + GPT-4o API + LiteLLM 实现 Cursor 免费平替', link: 'cline-gpt'},
+        { text: 'Cline + GPT-4o API + LiteLLM 实现 Cursor 免费平替', link: 'cline-gpt' },
       ],
     },
   ]
