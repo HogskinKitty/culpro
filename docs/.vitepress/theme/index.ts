@@ -92,7 +92,7 @@ export default {
 
       try {
         // 使用 loadNextModelClothes 切换模型外观
-        await oml2dInstance.value.loadNextModelClothes(newValue ? 0 : 1);
+        await oml2dInstance.value.loadNextModelClothes();
 
         // 显示切换提示
         oml2dInstance.value.tipsMessage(
