@@ -4,10 +4,16 @@ import mediumZoom from 'medium-zoom';
 import { onMounted, ref, watch, nextTick } from 'vue';
 import { useData, useRoute } from 'vitepress';
 
-// Live2D 模型配置
+/**
+ * Live2D 模型配置
+ */
 const MODEL_CONFIGS = {
-  DARK: 'https://model.oml2d.com/cat-black/model.json',
-  LIGHT: 'https://model.oml2d.com/cat-white/model.json',
+  // 模型路径配置，索引对应主题状态
+  PATHS: [
+    'https://model.oml2d.com/cat-black/model.json',   // 索引 0：暗色模型
+    'https://model.oml2d.com/cat-white/model.json'   // 索引 1：亮色模型
+  ],
+  // 模型基础配置
   DEFAULT_SCALE: 0.15,
   DEFAULT_POSITION: [0, 20] as [number, number],
   DEFAULT_HEIGHT: 350
@@ -22,39 +28,41 @@ export default {
     const oml2dInstance = ref<any>(null);
     const isModelLoading = ref(false);
 
-    // 模型路径状态
-    let modelPath = dark.value ? MODEL_CONFIGS.DARK : MODEL_CONFIGS.LIGHT;
-
-    // 初始化图片缩放功能
+    /**
+     * 初始化图片缩放功能
+     */
     const initZoom = () => {
       mediumZoom('.main img', { background: 'var(--vp-c-bg)' });
     };
 
-    // 更新模型路径
-    const updateModelPath = (isDark: boolean) => {
-      modelPath = isDark ? MODEL_CONFIGS.DARK : MODEL_CONFIGS.LIGHT;
-    };
-
-    // 创建 Live2D 实例
+    /**
+     * 创建 Live2D 实例并初始化模型
+     */
     const createLive2dInstance = async () => {
       if (isModelLoading.value) return;
 
       try {
         isModelLoading.value = true;
         const { loadOml2d } = await import('oh-my-live2d');
+
+        // 创建实例
         oml2dInstance.value = loadOml2d({
+          // 状态栏配置
           statusBar: {
             disable: true,
             loadSuccessMessage: '麻麻酱我来咯',
           },
+          // 菜单配置
           menus: {
             disable: true,
           },
+          // 位置和样式
           dockedPosition: 'left',
           primaryColor: '#546ec5',
+          // 模型配置
           models: [{
             name: 'cat',
-            path: modelPath,
+            path: MODEL_CONFIGS.PATHS,  // 使用路径数组
             scale: MODEL_CONFIGS.DEFAULT_SCALE,
             position: MODEL_CONFIGS.DEFAULT_POSITION,
             stageStyle: {
@@ -62,25 +70,12 @@ export default {
             }
           }]
         });
+
+        // 加载对应主题的模型
+        await oml2dInstance.value.loadModelByIndex(dark.value ? 0 : 1);
       } finally {
         isModelLoading.value = false;
       }
-    };
-
-    // 清理 Live2D 实例
-    const cleanupLive2dInstance = () => {
-      if (isModelLoading.value) return;
-
-      const containers = document.querySelectorAll('[id^="oml2d"]');
-      containers.forEach(container => container.remove());
-
-      // 清理可能的残留canvas元素
-      const canvases = document.querySelectorAll('canvas[id^="live2d"]');
-      canvases.forEach(canvas => canvas.remove());
-
-      // 清理可能的残留style标签
-      const styles = document.querySelectorAll('style[id^="oml2d"]');
-      styles.forEach(style => style.remove());
     };
 
     // 初始化
@@ -89,29 +84,24 @@ export default {
       createLive2dInstance();
     });
 
-    // 监听路由变化，重新初始化图片缩放
-    watch(
-      () => route.path,
-      () => nextTick(() => initZoom())
-    );
-
-    // 使用防抖处理主题切换
-    let themeChangeTimeout: ReturnType<typeof setTimeout>;
-
-    // 监听主题变化
+    /**
+     * 监听主题变化，切换模型
+     */
     watch(dark, async (newValue) => {
-      if (isModelLoading.value) return;
+      if (isModelLoading.value || !oml2dInstance.value) return;
 
-      // 清除之前的定时器
-      clearTimeout(themeChangeTimeout);
+      try {
+        // 使用 loadNextModelClothes 切换模型外观
+        await oml2dInstance.value.loadNextModelClothes(newValue ? 0 : 1);
 
-      // 设置新的定时器
-      themeChangeTimeout = setTimeout(async () => {
-        cleanupLive2dInstance();
-        updateModelPath(newValue);
-        await nextTick();
-        createLive2dInstance();
-      }, 300); // 300ms 的防抖延迟
+        // 显示切换提示
+        oml2dInstance.value.tipsMessage(
+          newValue ? '切换到暗色模式啦~' : '切换到亮色模式啦~',
+          3000  // 只保留持续时间参数
+        );
+      } catch (error) {
+        console.error('模型切换失败:', error);
+      }
     });
   }
 }
