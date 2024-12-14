@@ -60,7 +60,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     ]
   },
   {
-    text: '架构设计',
+    text: '系统设计',
     items: [
       { text: '系统架构', link: '/system-framework/' },
       { text: '第三方技术', link: '/third-party-technology/' }
