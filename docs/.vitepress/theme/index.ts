@@ -59,6 +59,7 @@ export default {
           // 位置和样式
           dockedPosition: 'left',
           primaryColor: '#546ec5',
+          mobileDisplay: true,
           // 模型配置
           models: [{
             name: 'cat',
