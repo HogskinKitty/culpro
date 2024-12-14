@@ -3,7 +3,7 @@ import type {DefaultTheme} from 'vitepress'
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   // 定义基础路径
   '/java/': {base: '/java/', items: sidebarJava()},
-  '/ai/': {base: '/ai/', items: sidebarAi()},
+  '/ai-llm/': {base: '/ai-llm/', items: sidebarAiLLM()},
 }
 
 // Java
@@ -24,8 +24,8 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
   ]
 }
 
-// AI
-function sidebarAi(): DefaultTheme.SidebarItem[] {
+// AI/LLM
+function sidebarAiLLM(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'AI 编程',
