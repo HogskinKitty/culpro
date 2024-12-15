@@ -117,8 +117,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/011-计算机基础/1-计算机网络/images/计算机网络.png">
-                            <a href="https://item.jd.com/11253710.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/11253710.html" target="_blank">
                                 <span>计算机网络</span>
                             </a>
                         </div>
@@ -128,8 +127,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/011-计算机基础/2-操作系统/images/操作系统.png">
-                            <a href="https://item.jd.com/12006637.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/12006637.html" target="_blank">
                                 <span>操作系统</span>
                             </a>
                         </div>
@@ -139,8 +137,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/011-计算机基础/3-编译原理/images/编译原理.png">
-                            <a href="https://item.jd.com/10058776.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/10058776.html" target="_blank">
                                 <span>编译原理</span>
                             </a>
                         </div>
@@ -162,7 +159,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/012-编程基础/1-数据结构/images/数据结构.png">
                             <a href="https://bugstack.cn/md/algorithm/data-structures/data-structures.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>数据结构</span>
                             </a>
                         </div>
@@ -172,8 +169,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/012-编程基础/2-数学逻辑/images/数学逻辑.png">
-                            <a href="https://bugstack.cn/md/algorithm/logic/math/2022-10-30-bits.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://bugstack.cn/md/algorithm/logic/math/2022-10-30-bits.html" target="_blank">
                                 <span>数学逻辑</span>
                             </a>
                         </div>
@@ -184,7 +180,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/012-编程基础/3-设计模式/images/设计模式.png">
                             <a href="https://bugstack.cn/md/develop/design-pattern/2020-05-20-%E9%87%8D%E5%AD%A6Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%8A%E5%AE%9E%E6%88%98%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F%E3%80%8B.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>设计模式</span>
                             </a>
                         </div>
@@ -205,8 +201,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/013-后端语言/1-C语言/images/c语言.png">
-                            <a href="https://item.jd.com/12627795.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/12627795.html" target="_blank">
                                 <span>C语言</span>
                             </a>
                         </div>
@@ -216,8 +211,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/013-后端语言/2-Java/images/java.png">
-                            <a href="https://item.jd.com/13122155.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/13122155.html" target="_blank">
                                 <span>Java</span>
                             </a>
                         </div>
@@ -238,8 +232,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/014-前端语言/1-HTML/images/HTML.png">
-                            <a href="https://www.runoob.com/html/html-tutorial.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.runoob.com/html/html-tutorial.html" target="_blank">
                                 <span>HTML</span>
                             </a>
                         </div>
@@ -249,8 +242,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/014-前端语言/2-JavaScript/images/JavaScript.png">
-                            <a href="https://item.jd.com/1049342942.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/1049342942.html" target="_blank">
                                 <span>JavaScript</span>
                             </a>
                         </div>
@@ -260,8 +252,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/014-前端语言/3-CSS/images/CSS.png">
-                            <a href="https://www.runoob.com/css/css-tutorial.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.runoob.com/css/css-tutorial.html" target="_blank">
                                 <span>CSS</span>
                             </a>
                         </div>
@@ -271,8 +262,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/014-前端语言/4-VUE/images/VUE.png">
-                            <a href="https://item.jd.com/13611922.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://item.jd.com/13611922.html" target="_blank">
                                 <span>VUE</span>
                             </a>
                         </div>
@@ -282,8 +272,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/01-基础/014-前端语言/5-REACT/images/REACT.png">
-                            <a href="https://react.docschina.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://react.docschina.org/" target="_blank">
                                 <span>REACT</span>
                             </a>
                         </div>
@@ -305,8 +294,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/02-设计/021-PPT/1-架构图/images/架构图.png">
-                            <a href="https://www.microsoft.com/en-ww/microsoft-365/powerpoint" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.microsoft.com/en-ww/microsoft-365/powerpoint" target="_blank">
                                 <span>架构图</span>
                             </a>
                         </div>
@@ -329,8 +317,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/032-架构分层/1-MVC/images/MVC.png">
-                            <a href="https://zh.m.wikipedia.org/zh-hans/MVC" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://zh.m.wikipedia.org/zh-hans/MVC" target="_blank">
                                 <span>MVC</span>
                             </a>
                         </div>
@@ -340,8 +327,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/032-架构分层/2-DDD/images/DDD.png">
-                            <a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank">
                                 <span>DDD</span>
                             </a>
                         </div>
@@ -364,7 +350,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/031-架构模式/1-单体应用/images/单体应用.png">
                             <a href="https://zh.wikipedia.org/zh-hans/%E5%96%AE%E9%AB%94%E5%BC%8F%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>单体应用</span>
                             </a>
                         </div>
@@ -374,8 +360,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/031-架构模式/2-微服务/images/微服务.png">
-                            <a href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E6%9C%8D%E5%8B%99" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E6%9C%8D%E5%8B%99" target="_blank">
                                 <span>微服务</span>
                             </a>
                         </div>
@@ -386,7 +371,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/031-架构模式/3-SOA/images/SOA.png">
                             <a href="https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>SOA</span>
                             </a>
                         </div>
@@ -406,9 +391,9 @@
                             <span
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
-                                src="https://bugstack.cn/images/roadmap/02-设计/024-PowerDesigner/1-数据库建模/images/数据库建模.png">
+                                src="https://bugstack.cn/images/roadmap/02-设计/024-PowerDesigner/1-数据库建���/images/数据库建模.png">
                             <a href="https://www.sap.com/products/technology-platform/powerdesigner-data-modeling-tools.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>数据库建模</span>
                             </a>
                         </div>
@@ -429,7 +414,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/02-设计/023-Xmind/1-思维导图/images/思维导图.png">
-                            <a href="https://xmind.cn/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://xmind.cn/" target="_blank">
                                 <span>思维导图</span>
                             </a>
                         </div>
@@ -450,8 +435,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/02-设计/022-draw/1-类图/images/类图.png">
-                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank">
                                 <span>类图</span>
                             </a>
                         </div>
@@ -461,8 +445,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/02-设计/022-draw/2-流程图/images/流程图.png">
-                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank">
                                 <span>流程图</span>
                             </a>
                         </div>
@@ -472,8 +455,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/02-设计/022-draw/3-时序图/images/时序图.png">
-                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank">
                                 <span>时序图</span>
                             </a>
                         </div>
@@ -483,8 +465,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/02-设计/022-draw/4-拓扑图/images/拓扑图.png">
-                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/jgraph/drawio-desktop/releases" target="_blank">
                                 <span>拓扑图</span>
                             </a>
                         </div>
@@ -507,8 +488,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/033-设计和开发原则/1-领域驱动设计/images/领域驱动设计.png">
-                            <a href="https://book.douban.com/subject/26819666/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://book.douban.com/subject/26819666/" target="_blank">
                                 <span>领域驱动设计</span>
                             </a>
                         </div>
@@ -518,8 +498,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/03-架构/033-设计和开发原则/2-测试驱动开发/images/测试驱动开发.png">
-                            <a href="https://book.douban.com/subject/2208597/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://book.douban.com/subject/2208597/" target="_blank">
                                 <span>测试驱动开发</span>
                             </a>
                         </div>
@@ -541,7 +520,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/041-代码托管/1-Github/images/Github.png">
-                            <a href="https://github.com/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://github.com/" target="_blank">
                                 <span>Github</span>
                             </a>
                         </div>
@@ -551,7 +530,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/041-代码托管/2-Gitcode/images/Gitcode.png">
-                            <a href="https://gitcode.net/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://gitcode.net/" target="_blank">
                                 <span>Gitcode</span>
                             </a>
                         </div>
@@ -561,7 +540,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/041-代码托管/3-Gitee/images/Gitee.png">
-                            <a href="https://gitee.com/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://gitee.com/" target="_blank">
                                 <span>Gitee</span>
                             </a>
                         </div>
@@ -582,8 +561,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/041-版本控制/1-Git/images/Git.png">
-                            <a href="https://git-scm.com/book/zh/v2/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://git-scm.com/book/zh/v2/" target="_blank">
                                 <span>Git</span>
                             </a>
                         </div>
@@ -593,8 +571,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/041-版本控制/2-SVN/images/SVN.png">
-                            <a href="https://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html" target="_blank">
                                 <span>SVN</span>
                             </a>
                         </div>
@@ -615,8 +592,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/042-开发工具/1-IntelliJ IDEA/images/IDEA.png">
-                            <a href="https://www.jetbrains.com/zh-cn/idea/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.jetbrains.com/zh-cn/idea/" target="_blank">
                                 <span>IntelliJ IDEA</span>
                             </a>
                         </div>
@@ -626,8 +602,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/042-开发工具/2-JetBrains Fleet/images/Fleet.png">
-                            <a href="https://www.jetbrains.com/fleet/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.jetbrains.com/fleet/" target="_blank">
                                 <span>JetBrains Fleet</span>
                             </a>
                         </div>
@@ -637,8 +612,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/042-开发工具/3-Navicat/images/Navicat.png">
-                            <a href="https://www.navicat.com.cn/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.navicat.com.cn/" target="_blank">
                                 <span>Navicat</span>
                             </a>
                         </div>
@@ -659,8 +633,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/043-依赖管理/1-Maven/images/Maven.png">
-                            <a href="https://maven.apache.org/download.cgi" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://maven.apache.org/download.cgi" target="_blank">
                                 <span>Maven</span>
                             </a>
                         </div>
@@ -670,7 +643,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/043-依赖管理/2-Gradle/images/Gradle.png">
-                            <a href="https://gradle.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://gradle.org/" target="_blank">
                                 <span>Gradle</span>
                             </a>
                         </div>
@@ -693,8 +666,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/054-任务调度/1-xxl-job/images/xxl-job.png">
-                            <a href="https://www.xuxueli.com/xxl-job/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.xuxueli.com/xxl-job/" target="_blank">
                                 <span>xxl-Job</span>
                             </a>
                         </div>
@@ -704,8 +676,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/054-任务调度/2-elastic-job/images/elastic-job.png">
-                            <a href="https://shardingsphere.apache.org/elasticjob/current/cn/overview/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://shardingsphere.apache.org/elasticjob/current/cn/overview/" target="_blank">
                                 <span>elastic-job</span>
                             </a>
                         </div>
@@ -713,8 +684,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/054-任务调度/3-quartz/images/quartz.png">
-                            <a href="http://www.quartz-scheduler.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="http://www.quartz-scheduler.org/" target="_blank">
                                 <span>quartz</span>
                             </a>
                         </div>
@@ -735,8 +705,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/053-MQ/1-Kafka/images/Kafka.png">
-                            <a href="https://kafka.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://kafka.apache.org/" target="_blank">
                                 <span>Kafka</span>
                             </a>
                         </div>
@@ -746,8 +715,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/053-MQ/2-RabbitMQ/images/RabbitMQ.png">
-                            <a href="https://www.rabbitmq.com/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.rabbitmq.com/" target="_blank">
                                 <span>RabbitMQ</span>
                             </a>
                         </div>
@@ -757,8 +725,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/053-MQ/3-RocketMQ/images/RocketMQ.png">
-                            <a href="https://rocketmq.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://rocketmq.apache.org/" target="_blank">
                                 <span>RocketMQ</span>
                             </a>
                         </div>
@@ -768,8 +735,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/053-MQ/4-ActiveMQ/images/ActiveMQ.png">
-                            <a href="https://activemq.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://activemq.apache.org/" target="_blank">
                                 <span>ActiveMQ</span>
                             </a>
                         </div>
@@ -790,8 +756,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/052-RPC/1-Dubbo/images/Dubbo.png">
-                            <a href="https://dubbo.apache.org/zh/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://dubbo.apache.org/zh/" target="_blank">
                                 <span>Dubbo</span>
                             </a>
                         </div>
@@ -801,7 +766,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/052-RPC/2-GRPC/images/GRPC.png">
-                            <a href="https://grpc.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://grpc.io/" target="_blank">
                                 <span>GRPC</span>
                             </a>
                         </div>
@@ -823,7 +788,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/051-框架/1-Spring/images/Spring.png">
-                            <a href="https://spring.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://spring.io/" target="_blank">
                                 <span>Spring</span>
                             </a>
                         </div>
@@ -833,8 +798,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/051-框架/2-SpringBoot/images/SpringBoot.png">
-                            <a href="https://spring.io/projects/spring-boot" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://spring.io/projects/spring-boot" target="_blank">
                                 <span>SpringBoot</span>
                             </a>
                         </div>
@@ -844,8 +808,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/051-框架/3-MyBatis/images/MyBatis.png">
-                            <a href="https://mybatis.org/mybatis-3/zh/index.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://mybatis.org/mybatis-3/zh/index.html" target="_blank">
                                 <span>MyBatis</span>
                             </a>
                         </div>
@@ -864,8 +827,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/044-脚手架/1-Spring initializr/images/Initializr.png">
-                            <a href="https://start.spring.io/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://start.spring.io/" target="_blank">
                                 <span>Spring initializr</span>
                             </a>
                         </div>
@@ -873,8 +835,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/044-脚手架/2-Aliyun Java initializr/images/Initializr.png">
-                            <a href="https://start.aliyun.com/bootstrap.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://start.aliyun.com/bootstrap.html" target="_blank">
                                 <span>Aliyun Java initializr</span>
                             </a>
                         </div>
@@ -882,8 +843,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/04-环境/044-脚手架/3-IDEA Plugin Project/images/Initializr.png">
-                            <a href="https://github.com/fuzhengwei/guide-idea-plugin-scaffolding" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/fuzhengwei/guide-idea-plugin-scaffolding" target="_blank">
                                 <span>IDEA Plugin</span>
                             </a>
                         </div>
@@ -906,8 +866,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/055-注册中心/1-ZooKeeper/images/Zookeeper.png">
-                            <a href="https://zookeeper.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://zookeeper.apache.org/" target="_blank">
                                 <span>ZooKeeper</span>
                             </a>
                         </div>
@@ -917,8 +876,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/055-注册中心/2-Eureka/images/Eureka.png">
-                            <a href="https://github.com/Netflix/eureka" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/Netflix/eureka" target="_blank">
                                 <span>Eureka</span>
                             </a>
                         </div>
@@ -928,8 +886,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/055-注册中心/3-Nacos/images/Nacos.png">
-                            <a href="https://nacos.io/zh-cn/docs/what-is-nacos.html" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://nacos.io/zh-cn/docs/what-is-nacos.html" target="_blank">
                                 <span>Nacos</span>
                             </a>
                         </div>
@@ -950,8 +907,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/056-数据源/1-DBCP/images/DBCP.png">
-                            <a href="https://commons.apache.org/proper/commons-dbcp/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://commons.apache.org/proper/commons-dbcp/" target="_blank">
                                 <span>DBCP</span>
                             </a>
                         </div>
@@ -961,8 +917,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/056-数据源/2-C3P0/images/C3P0.png">
-                            <a href="https://www.mchange.com/projects/c3p0/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.mchange.com/projects/c3p0/" target="_blank">
                                 <span>C3P0</span>
                             </a>
                         </div>
@@ -972,8 +927,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/056-数据源/3-Druid/images/Druid.png">
-                            <a href="https://github.com/alibaba/druid" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/alibaba/druid" target="_blank">
                                 <span>Druid</span>
                             </a>
                         </div>
@@ -994,8 +948,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/057-分库分表/1-MyCat/images/MyCat.png">
-                            <a href="http://www.mycat.org.cn/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="http://www.mycat.org.cn/" target="_blank">
                                 <span>MyCat</span>
                             </a>
                         </div>
@@ -1005,8 +958,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/057-分库分表/2-Sharding-Jdbc/images/Sharding-Jdbc.png">
-                            <a href="https://shardingsphere.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://shardingsphere.apache.org/" target="_blank">
                                 <span>Sharding-Jdbc</span>
                             </a>
                         </div>
@@ -1027,8 +979,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/058-网关/1-Spring Cloud Gateway/images/Spring.png">
-                            <a href="https://spring.io/projects/spring-cloud-gateway" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://spring.io/projects/spring-cloud-gateway" target="_blank">
                                 <span>Spring Cloud Gateway</span>
                             </a>
                         </div>
@@ -1036,7 +987,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/058-网关/2-Soul/images/Soul.png">
-                            <a href="#" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="#" target="_blank">
                                 <span>Soul</span>
                             </a>
                         </div>
@@ -1044,8 +995,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/058-网关/3-Zuul/images/Zuul.png">
-                            <a href="https://github.com/Netflix/zuul" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/Netflix/zuul" target="_blank">
                                 <span>Zuul</span>
                             </a>
                         </div>
@@ -1055,8 +1005,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/058-网关/4-OpenResty/images/OpenResty.png">
-                            <a href="https://openresty.org/cn/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://openresty.org/cn/" target="_blank">
                                 <span>OpenResty</span>
                             </a>
                         </div>
@@ -1077,8 +1026,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/059-关系型数据库/1-MySql/images/MySql.png">
-                            <a href="https://www.mysql.com/cn/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.mysql.com/cn/" target="_blank">
                                 <span>MySql</span>
                             </a>
                         </div>
@@ -1088,8 +1036,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/059-关系型数据库/2-Oracle/images/Oracle.png">
-                            <a href="https://www.oracle.com/hk/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.oracle.com/hk/" target="_blank">
                                 <span>Oracle</span>
                             </a>
                         </div>
@@ -1099,8 +1046,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/059-关系型数据库/3-TiDB/images/TIDB.png">
-                            <a href="https://docs.pingcap.com/zh/tidb/stable" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://docs.pingcap.com/zh/tidb/stable" target="_blank">
                                 <span>TiDB</span>
                             </a>
                         </div>
@@ -1123,8 +1069,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0514-大数据/1-Flink/images/Flink.png">
-                            <a href="https://flink.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://flink.apache.org/" target="_blank">
                                 <span>Flink</span>
                             </a>
                         </div>
@@ -1132,8 +1077,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0514-大数据/2-Storm/images/Storm.png">
-                            <a href="https://storm.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://storm.apache.org/" target="_blank">
                                 <span>Storm</span>
                             </a>
                         </div>
@@ -1141,8 +1085,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0514-大数据/3-Spark/images/Spark.png">
-                            <a href="https://spark.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://spark.apache.org/" target="_blank">
                                 <span>Spark</span>
                             </a>
                         </div>
@@ -1150,8 +1093,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0514-大数据/4-Hive/images/Hive.png">
-                            <a href="https://hive.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://hive.apache.org/" target="_blank">
                                 <span>Hive</span>
                             </a>
                         </div>
@@ -1172,7 +1114,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0510-NoSQL数据库/1-Redis/images/Redis.png">
-                            <a href="https://redis.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://redis.io/" target="_blank">
                                 <span>Redis</span>
                             </a>
                         </div>
@@ -1182,7 +1124,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0510-NoSQL数据库/2-Memcached/images/Memcached.png">
-                            <a href="https://memcached.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://memcached.org/" target="_blank">
                                 <span>Memcached</span>
                             </a>
                         </div>
@@ -1201,7 +1143,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0511-图形数据库/1-Neo4j/images/Neo4j.png">
-                            <a href="https://neo4j.com/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://neo4j.com/" target="_blank">
                                 <span>Neo4j</span>
                             </a>
                         </div>
@@ -1222,8 +1164,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0512-文件存储/1-Hbase/images/Hbase.png">
-                            <a href="https://hbase.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://hbase.apache.org/" target="_blank">
                                 <span>Hbase</span>
                             </a>
                         </div>
@@ -1233,7 +1174,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0512-文件存储/2-Hadoop/images/Hadoop.png">
-                            <a href="#" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="#" target="_blank">
                                 <span>Hadoop</span>
                             </a>
                         </div>
@@ -1243,8 +1184,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0512-文件存储/3-MongoDB/images/MongoDB.png">
-                            <a href="https://www.mongodb.com/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.mongodb.com/" target="_blank">
                                 <span>MongoDB</span>
                             </a>
                         </div>
@@ -1265,8 +1205,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0513-搜索引擎/1-ElasticSearch/images/Elasticsearch.png">
-                            <a href="https://www.elastic.co/cn/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.elastic.co/cn/" target="_blank">
                                 <span>ElasticSearch</span>
                             </a>
                         </div>
@@ -1276,8 +1215,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0513-搜索引擎/2-Solr/images/Solr.png">
-                            <a href="https://solr.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://solr.apache.org/" target="_blank">
                                 <span>Solr</span>
                             </a>
                         </div>
@@ -1300,8 +1238,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0515-数据同步/1-Otter/Otter.png">
-                            <a href="https://github.com/alibaba/otter" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/alibaba/otter" target="_blank">
                                 <span>Otter</span>
                             </a>
                         </div>
@@ -1311,8 +1248,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/05-开发/0515-数据同步/2-Canal/Canal.png">
-                            <a href="https://github.com/alibaba/canal" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/alibaba/canal" target="_blank">
                                 <span>Canal</span>
                             </a>
                         </div>
@@ -1334,8 +1270,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/061-序列化/1-fastjson/images/fastjson.png">
-                            <a href="https://github.com/alibaba/fastjson" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/alibaba/fastjson" target="_blank">
                                 <span>fastjson</span>
                             </a>
                         </div>
@@ -1345,8 +1280,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/061-序列化/2-jackson/images/jackson.png">
-                            <a href="https://github.com/FasterXML/jackson" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/FasterXML/jackson" target="_blank">
                                 <span>jackson</span>
                             </a>
                         </div>
@@ -1356,8 +1290,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/061-序列化/3-Gson/images/Gson.png">
-                            <a href="https://github.com/google/gson" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/google/gson" target="_blank">
                                 <span>Gson</span>
                             </a>
                         </div>
@@ -1378,8 +1311,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/062-认证授权/1-shiro/images/shiro.png">
-                            <a href="https://shiro.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://shiro.apache.org/" target="_blank">
                                 <span>shiro</span>
                             </a>
                         </div>
@@ -1389,7 +1321,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/062-认证授权/2-jwt/images/jwt.png">
-                            <a href="https://jwt.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://jwt.io/" target="_blank">
                                 <span>jwt</span>
                             </a>
                         </div>
@@ -1399,7 +1331,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/062-认证授权/3-sso/images/sso.png">
-                            <a href="" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="" target="_blank">
                                 <span>SSO</span>
                             </a>
                         </div>
@@ -1421,7 +1353,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/063-字节码框架/1-ASM/images/ASM.png">
                             <a href="https://bugstack.cn/md/bytecode/asm-document/1%E5%BC%95%E8%A8%80.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>ASM</span>
                             </a>
                         </div>
@@ -1431,8 +1363,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/063-字节码框架/2-Javassist/images/Javassist.png">
-                            <a href="https://www.javassist.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.javassist.org/" target="_blank">
                                 <span>Javassist</span>
                             </a>
                         </div>
@@ -1442,8 +1373,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/063-字节码框架/3-Byte-Buddy/images/Byte-Buddy.png">
-                            <a href="https://bytebuddy.net/#/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://bytebuddy.net/#/" target="_blank">
                                 <span>Byte-Buddy</span>
                             </a>
                         </div>
@@ -1464,7 +1394,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/064-网络编程/1-Netty/images/Netty.png">
-                            <a href="https://netty.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://netty.io/" target="_blank">
                                 <span>Netty</span>
                             </a>
                         </div>
@@ -1472,8 +1402,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/064-网络��程/2-Mina/images/Mina.png">
-                            <a href="https://mina.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://mina.apache.org/" target="_blank">
                                 <span>Mina</span>
                             </a>
                         </div>
@@ -1484,7 +1413,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/064-网络编程/3-WebFlux/images/WebFlux.png">
                             <a href="https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>WebFlux</span>
                             </a>
                         </div>
@@ -1507,7 +1436,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/069-规则引擎/1-Drools/images/Drools.png">
-                            <a href="https://www.drools.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.drools.org/" target="_blank">
                                 <span>Drools</span>
                             </a>
                         </div>
@@ -1528,8 +1457,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/068-HTTP框架/1-HttpClient/images/HttpClient.png">
-                            <a href="https://hc.apache.org/httpcomponents-client-5.1.x/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://hc.apache.org/httpcomponents-client-5.1.x/" target="_blank">
                                 <span>HttpClient</span>
                             </a>
                         </div>
@@ -1540,7 +1468,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/068-HTTP框架/2-RestTemplate/images/RestTemplate.png">
                             <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>RestTemplate</span>
                             </a>
                         </div>
@@ -1561,8 +1489,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/067-服务治理/1-Hystrix/images/Hystrix.png">
-                            <a href="https://github.com/Netflix/Hystrix" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/Netflix/Hystrix" target="_blank">
                                 <span>Hystrix</span>
                             </a>
                         </div>
@@ -1572,8 +1499,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/067-服务治理/2-Sentinel/images/Sentinel.png">
-                            <a href="https://sentinelguard.io/zh-cn/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://sentinelguard.io/zh-cn/" target="_blank">
                                 <span>Sentinel</span>
                             </a>
                         </div>
@@ -1584,7 +1510,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/067-服务治理/3-RateLimiter/images/RateLimiter.png">
                             <a href="https://guava.dev/releases/19.0/api/docs/index.html?com/google/common/util/concurrent/RateLimiter.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>RateLimiter</span>
                             </a>
                         </div>
@@ -1605,8 +1531,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/066-日志/1-log4j/images/log4j.png">
-                            <a href="https://logging.apache.org/log4j/2.x/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://logging.apache.org/log4j/2.x/" target="_blank">
                                 <span>log4j</span>
                             </a>
                         </div>
@@ -1616,7 +1541,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/066-日志/2-logback/images/logback.png">
-                            <a href="https://logback.qos.ch/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://logback.qos.ch/" target="_blank">
                                 <span>logback</span>
                             </a>
                         </div>
@@ -1626,7 +1551,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/066-日志/3-slf4j/images/slf4j.png">
-                            <a href="https://www.slf4j.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.slf4j.org/" target="_blank">
                                 <span>slf4j</span>
                             </a>
                         </div>
@@ -1647,7 +1572,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/065-工作流/1-BPMN/images/BPMN.png">
-                            <a href="https://www.bpmn.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.bpmn.org/" target="_blank">
                                 <span>BPMN</span>
                             </a>
                         </div>
@@ -1657,7 +1582,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/065-工作流/2-Activiti7/images/Activiti.png">
-                            <a href="https://www.bpmn.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.bpmn.org/" target="_blank">
                                 <span>Activiti7</span>
                             </a>
                         </div>
@@ -1680,8 +1605,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/0610-Redis/1-Redisson/images/Redisson.png">
-                            <a href="https://github.com/redisson/redisson" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/redisson/redisson" target="_blank">
                                 <span>Redisson</span>
                             </a>
                         </div>
@@ -1692,7 +1616,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/0610-Redis/2-RedisTemplate/images/RedisTemplate.png">
                             <a href="https://docs.spring.io/spring-data/redis/docs/current/api/org/springframework/data/redis/core/RedisTemplate.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>RedisTemplate</span>
                             </a>
                         </div>
@@ -1702,8 +1626,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/0610-Redis/3-Jedis/images/Jedis.png">
-                            <a href="https://github.com/redis/jedis" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/redis/jedis" target="_blank">
                                 <span>Jedis</span>
                             </a>
                         </div>
@@ -1724,8 +1647,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/0611-其他/1-Guava/images/Guava.png">
-                            <a href="https://github.com/google/guava" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/google/guava" target="_blank">
                                 <span>Guava</span>
                             </a>
                         </div>
@@ -1735,7 +1657,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/0611-其他/2-Hutool/images/Hutool.png">
-                            <a href="https://hutool.cn/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://hutool.cn/" target="_blank">
                                 <span>Hutool</span>
                             </a>
                         </div>
@@ -1745,8 +1667,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/06-类库/0611-其他/3-TTL/images/TTL.png">
-                            <a href="https://github.com/alibaba/transmittable-thread-local" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/alibaba/transmittable-thread-local" target="_blank">
                                 <span>TTL</span>
                             </a>
                         </div>
@@ -1768,8 +1689,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/071-Mock/1-Mockito/images/Mock.png">
-                            <a href="https://github.com/mockito/mockito" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/mockito/mockito" target="_blank">
                                 <span>Mockito</span>
                             </a>
                         </div>
@@ -1790,8 +1710,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/072-调试工具/1-Postman/images/Postman.png">
-                            <a href="https://www.postman.com/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.postman.com/" target="_blank">
                                 <span>Postman</span>
                             </a>
                         </div>
@@ -1801,7 +1720,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/072-调试工具/2-ApiFox/images/ApiFox.png">
-                            <a href="https://www.apifox.cn/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.apifox.cn/" target="_blank">
                                 <span>ApiFox</span>
                             </a>
                         </div>
@@ -1811,7 +1730,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/072-调试工具/3-ApiPost/images/ApiPost.png">
-                            <a href="https://www.apipost.cn/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.apipost.cn/" target="_blank">
                                 <span>ApiPost</span>
                             </a>
                         </div>
@@ -1821,8 +1740,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/072-调试工具/4-FastRequest/images/FastRequest.png">
-                            <a href="https://dromara.org/fast-request/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://dromara.org/fast-request/" target="_blank">
                                 <span>Fast Request</span>
                             </a>
                         </div>
@@ -1843,8 +1761,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/073-API管理/1-OpenApi/OpenApi.png">
-                            <a href="https://www.openapis.org" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.openapis.org" target="_blank">
                                 <span>OpenApi</span>
                             </a>
                         </div>
@@ -1854,7 +1771,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/073-API管理/2-Swagger/Swagger.png">
-                            <a href="https://swagger.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://swagger.io/" target="_blank">
                                 <span>Swagger</span>
                             </a>
                         </div>
@@ -1865,7 +1782,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/073-API管理/3-Javadoc/Javadoc.png">
                             <a href="https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>Javadoc</span>
                             </a>
                         </div>
@@ -1875,8 +1792,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/073-API管理/4-Yapi/Yapi.png">
-                            <a href="http://yapi.dapengjiaoyu.com/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="http://yapi.dapengjiaoyu.com/" target="_blank">
                                 <span>Yapi</span>
                             </a>
                         </div>
@@ -1886,7 +1802,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/073-API管理/5-Torna/Torna.png">
-                            <a href="http://torna.cn/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="http://torna.cn/" target="_blank">
                                 <span>Torna</span>
                             </a>
                         </div>
@@ -1896,8 +1812,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/07-调试/073-API管理/6-smart-doc/smart-doc.png">
-                            <a href="https://github.com/smart-doc-group/smart-doc" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/smart-doc-group/smart-doc" target="_blank">
                                 <span>smart-doc</span>
                             </a>
                         </div>
@@ -1921,8 +1836,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/093-质量检测/1-SonarQube/images/SonarQube.png">
-                            <a href="https://www.sonarqube.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://www.sonarqube.org/" target="_blank">
                                 <span>SonarQube</span>
                             </a>
                         </div>
@@ -1943,8 +1857,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/092-代码规范/1-p3c/images/p3c.png">
-                            <a href="https://github.com/alibaba/p3c" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/alibaba/p3c" target="_blank">
                                 <span>p3c</span>
                             </a>
                         </div>
@@ -1954,8 +1867,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/092-代码规范/1-pmd-idea/images/pmd-idea.png">
-                            <a href="https://github.com/ybroeker/pmd-idea" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/ybroeker/pmd-idea" target="_blank">
                                 <span>pmd-idea</span>
                             </a>
                         </div>
@@ -1977,7 +1889,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/091-代码审查/1-github/images/github.png">
-                            <a href="https://github.com/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://github.com/" target="_blank">
                                 <span>github</span>
                             </a>
                         </div>
@@ -1998,8 +1910,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/08-测试/082-性能测试/1-Jemeter/images/Jemeter.png">
-                            <a href="https://jmeter.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://jmeter.apache.org/" target="_blank">
                                 <span>JMeter</span>
                             </a>
                         </div>
@@ -2012,7 +1923,7 @@
                     </div>
                     <div class="category"
                         style="background-color: #A4D3EE;height:30px;line-height:30px;font-size:14px;font-weight:700px;padding-left:24px;">
-                        单元测试
+                        单元��试
                     </div>
                     <div class="productions" style="margin-bottom: 16px;">
                         <div class="production"
@@ -2021,8 +1932,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/08-测试/081-单元测试/1-JUnit/images/JUnit.png">
-                            <a href="https://junit.org/junit5/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://junit.org/junit5/" target="_blank">
                                 <span>JUnit</span>
                             </a>
                         </div>
@@ -2032,7 +1942,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/08-测试/081-单元测试/2-TestNG/images/TestNG.png">
-                            <a href="https://testng.org/doc/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://testng.org/doc/" target="_blank">
                                 <span>TestNG</span>
                             </a>
                         </div>
@@ -2055,8 +1965,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/094-监控系统/1-Dapper/images/Dapper.png">
-                            <a href="https://bigbully.github.io/Dapper-translation/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://bigbully.github.io/Dapper-translation/" target="_blank">
                                 <span>Dapper</span>
                             </a>
                         </div>
@@ -2066,8 +1975,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/094-监控系统/2-Pinpoint/images/Pinpoint.png">
-                            <a href="https://github.com/pinpoint-apm/pinpoint" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/pinpoint-apm/pinpoint" target="_blank">
                                 <span>Pinpoint</span>
                             </a>
                         </div>
@@ -2077,8 +1985,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/094-监控系统/3-Prometheus/images/Prometheus.png">
-                            <a href="https://github.com/prometheus/prometheus" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/prometheus/prometheus" target="_blank">
                                 <span>Prometheus</span>
                             </a>
                         </div>
@@ -2088,8 +1995,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/094-监控系统/4-SkyWalking/images/SkyWalking.png">
-                            <a href="https://skywalking.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://skywalking.apache.org/" target="_blank">
                                 <span>SkyWalking</span>
                             </a>
                         </div>
@@ -2097,8 +2003,7 @@
                             style="cursor: pointer;height:24px;display:flex;align-items:center;padding-left:24px;position:relative;margin-top:2px;">
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/09-质量分析/094-监控系统/5-BeeAPM/images/BeeAPM.png">
-                            <a href="https://github.com/hao117/bee-apm" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://github.com/hao117/bee-apm" target="_blank">
                                 <span>BeeAPM</span>
                             </a>
                         </div>
@@ -2120,7 +2025,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/101-CICD/1-jenkins/images/jenkins.png">
-                            <a href="https://www.jenkins.io/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.jenkins.io/" target="_blank">
                                 <span>jenkins</span>
                             </a>
                         </div>
@@ -2142,7 +2047,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/102-发布/1-War/images/War.png">
                             <a href="https://stackoverflow.com/questions/5871053/difference-between-jar-and-war-in-java"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>War</span>
                             </a>
                         </div>
@@ -2153,7 +2058,7 @@
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/102-发布/2-Jar/images/Jar.png">
                             <a href="https://stackoverflow.com/questions/5871053/difference-between-jar-and-war-in-java"
-                                target="_blank" style="color:black;text-decoration:none;">
+                                target="_blank">
                                 <span>Jar</span>
                             </a>
                         </div>
@@ -2174,7 +2079,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/103-服务器/1-Nginx/images/Nginx.png">
-                            <a href="https://www.nginx.com/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.nginx.com/" target="_blank">
                                 <span>Nginx</span>
                             </a>
                         </div>
@@ -2184,7 +2089,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/103-服务器/2-Apache/images/Apache.png">
-                            <a href="https://www.apache.org/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.apache.org/" target="_blank">
                                 <span>Apache</span>
                             </a>
                         </div>
@@ -2194,8 +2099,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/103-服务器/3-Tomcat/images/Tomcat.png">
-                            <a href="https://tomcat.apache.org/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://tomcat.apache.org/" target="_blank">
                                 <span>Tomcat</span>
                             </a>
                         </div>
@@ -2216,7 +2120,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #e1251b; left: 0; transform: scale(.6);">️A</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/104-容器化/1-Docker/images/Docker.png">
-                            <a href="https://www.docker.com/" target="_blank" style="color:black;text-decoration:none;">
+                            <a href="https://www.docker.com/" target="_blank">
                                 <span>Docker</span>
                             </a>
                         </div>
@@ -2226,8 +2130,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/104-容器化/2-K8S/images/K8S.png">
-                            <a href="https://kubernetes.io/zh-cn/docs/home/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://kubernetes.io/zh-cn/docs/home/" target="_blank">
                                 <span>K8S</span>
                             </a>
                         </div>
@@ -2280,8 +2183,7 @@
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                                 src="https://bugstack.cn/images/roadmap/10-发布部署/106-云原生/1-Istio/images/Istio.png">
-                            <a href="https://istio.io/latest/zh/" target="_blank"
-                                style="color:black;text-decoration:none;">
+                            <a href="https://istio.io/latest/zh/" target="_blank">
                                 <span>Istio</span>
                             </a>
                         </div>
@@ -2302,7 +2204,7 @@
                         <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                             src="https://bugstack.cn/images/roadmap/10-发布部署/105-服务化/1-PaaS/images/PaaS.png">
                         <a href="https://www.intel.com/content/www/us/en/cloud-computing/as-a-service.html"
-                            target="_blank" style="color:black;text-decoration:none;">
+                            target="_blank">
                             <span>PaaS</span>
                         </a>
                     </div>
@@ -2313,7 +2215,7 @@
                         <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                             src="https://bugstack.cn/images/roadmap/10-发布部署/105-服务化/2-SaaS/images/SaaS.png">
                         <a href="https://www.intel.com/content/www/us/en/cloud-computing/as-a-service.html"
-                            target="_blank" style="color:black;text-decoration:none;">
+                            target="_blank">
                             <span>SaaS</span>
                         </a>
                     </div>
@@ -2324,7 +2226,7 @@
                         <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
                             src="https://bugstack.cn/images/roadmap/10-发布部署/105-服务化/3-IaaS/images/IaaS.png">
                         <a href="https://www.intel.com/content/www/us/en/cloud-computing/as-a-service.html"
-                            target="_blank" style="color:black;text-decoration:none;">
+                            target="_blank">
                             <span>IaaS</span>
                         </a>
                     </div>
@@ -2693,5 +2595,42 @@ export default {};
 
 .font-bold {
     font-weight: 700;
+}
+
+/* 添加全局链接样式 */
+.production a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.production a:hover {
+    color: #546ec5;
+}
+
+/* 添加主题相关的CSS变量 */
+:root {
+    --icon-bg-primary: #e1251b;
+    --icon-bg-secondary: #999999;
+    --link-hover-color: #546ec5;
+}
+
+.dark {
+    --icon-bg-primary: #ff4545;
+    --icon-bg-secondary: #666666;
+    --link-hover-color: #7e9aff;
+}
+
+/* 修改A/B图标的背景色样式,使用CSS变量 */
+.production span[style*="background-color: #e1251b"] {
+    background-color: var(--icon-bg-primary) !important;
+}
+
+.production span[style*="background-color: #999999"] {
+    background-color: var(--icon-bg-secondary) !important;
+}
+
+/* 修改链接hover颜色 */
+.production a:hover {
+    color: var(--link-hover-color);
 }
 </style>
