@@ -2413,7 +2413,6 @@
 <script>
 export default {};
 </script>
-
 <style>
 /* 基础布局 */
 .road-map {
@@ -2422,9 +2421,7 @@ export default {};
     margin: 0 auto;
     position: relative;
     max-width: 100%;
-    /* 确保不超出容器 */
     box-sizing: border-box;
-    /* 确保 padding 不会影响总宽度 */
 }
 
 .road-map-left {
@@ -2448,19 +2445,24 @@ export default {};
 }
 
 /* 行和列布局 */
-[css="row"] {
+.flex-row {
     justify-content: flex-start;
     font-size: 12px;
     display: flex;
 }
 
 .column {
+    width: 160px;
+    min-height: 164px;
+}
+
+.column-spacer {
     width: 150px;
     min-height: 164px;
 }
 
-/* 路由和分类样式 */
-.route {
+/* 标题样式 */
+.title-base {
     height: 30px;
     line-height: 30px;
     font-size: 14px;
@@ -2468,19 +2470,24 @@ export default {};
     padding-left: 24px;
 }
 
-.category {
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 24px;
+/* 路由标题背景色 */
+.bg-blue {
+    background-color: #546ec5;
+}
+
+.bg-blue-light {
+    background-color: #7E93D5;
+}
+
+.bg-orange {
+    background-color: #f1c232;
+}
+
+.bg-orange-light {
+    background-color: #ffe599;
 }
 
 /* 产品项样式 */
-.productions {
-    margin-bottom: 16px;
-}
-
 .production {
     cursor: pointer;
     height: 24px;
@@ -2496,19 +2503,23 @@ export default {};
     border-radius: 4px;
 }
 
-.production .icon {
+.production-icon {
     width: 16px;
     height: 16px;
     margin-right: 6px;
 }
 
-.production a {
+.production-link {
     color: black;
     text-decoration: none;
 }
 
-/* 等级标记样式 */
-.production span[style*="background-color: #e1251b"] {
+.productions-container {
+    margin-bottom: 16px;
+}
+
+/* 等级标记 */
+.level-mark {
     color: #fff;
     display: flex;
     justify-content: center;
@@ -2522,36 +2533,165 @@ export default {};
     transform: scale(.6);
 }
 
+.level-a {
+    background-color: #e1251b;
+}
+
+.level-b {
+    background-color: #999999;
+}
+
 /* 转角样式 */
-.left-corner,
-.right-corner {
+.corner-base {
     margin: 100px auto;
     width: 40px;
-    height: 120px;
 }
 
 .left-corner {
+    composes: corner-base;
     border-top-left-radius: 60px;
     border-bottom-left-radius: 60px;
 }
 
 .right-corner {
+    composes: corner-base;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
 }
 
-/* 主题色定义 */
-:root {
-    --primary-color: #546ec5;
-    --hover-color: #546ec5;
-    /* --text-color: #000000; */
-    --border-radius: 4px;
+/* 转角装饰 */
+.corner-decoration-blue {
+    box-shadow: 0 0 0 30px #00ccff, 0 0 0 60px #99ffff;
+    clip-path: polygon(-300px 0px, 39px -220px, 39px 220px, 60px 220px);
 }
 
-/* 覆盖 VitePress 默认样式 */
+.corner-decoration-purple {
+    box-shadow: 0 0 0 30px #DA70D6, 0 0 0 60px #FFBBFF;
+    clip-path: polygon(-300px 0px, 39px -220px, 39px 220px, 60px 260px);
+}
+
+/* VitePress 覆盖 */
 :deep(.vp-doc) {
     padding: 0;
     margin: 0;
     max-width: none;
+}
+
+/* 布局工具类 */
+.ml-n1 {
+    margin-left: -1px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mt-n40 {
+    margin-top: -40px;
+}
+
+.mt-n140 {
+    margin-top: -140px;
+}
+
+/* 背景色工具类 */
+.bg-purple {
+    background-color: #DA70D6;
+}
+
+.bg-purple-light {
+    background-color: #FFBBFF;
+}
+
+.bg-green {
+    background-color: #66ff99;
+}
+
+.bg-green-light {
+    background-color: #33cc99;
+}
+
+.bg-pink {
+    background-color: #FF3E96;
+}
+
+.bg-pink-light {
+    background-color: #FFAEB9;
+}
+
+.bg-yellow {
+    background-color: #FFD700;
+}
+
+.bg-yellow-light {
+    background-color: #FFF68F;
+}
+
+/* 布局工具类补充 */
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+/* 定位工具类 */
+.pos-relative {
+    position: relative;
+}
+
+.pos-right-1 {
+    right: 1px;
+}
+
+/* 转角装饰补充 */
+.corner-decoration-green {
+    box-shadow: 0 0 0 30px #66ff99, 0 0 0 60px #33cc99;
+    clip-path: polygon(1px -120px, 220px 0px, 160px 220px, 1px 300px);
+}
+
+.corner-decoration-pink {
+    box-shadow: 0 0 0 30px #FFAEB9, 0 0 0 60px #FF3E96;
+    clip-path: polygon(1px -120px, 220px 0px, 160px 220px, 1px 300px);
+}
+
+/* 高度工具类 */
+.h-104 {
+    height: 104px;
+}
+
+.h-120 {
+    height: 120px;
+}
+
+.h-146 {
+    height: 146px;
+}
+
+.h-172 {
+    height: 172px;
+}
+
+/* 其他工具类 */
+.text-white {
+    color: #ffffff;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-bold {
+    font-weight: 700;
 }
 </style>
