@@ -391,7 +391,7 @@
                             <span
                                 style="color: #fff; display: flex; justify-content: center; align-items: center; position: absolute; width: 24px; height: 24px; padding-top: 1px; border-radius: 50%; background-color: #999999; left: 0; transform: scale(.6);">️B</span>
                             <img class="icon" style="width: 16px;height: 16px;margin-right: 6px;"
-                                src="https://bugstack.cn/images/roadmap/02-设计/024-PowerDesigner/1-数据库建���/images/数据库建模.png">
+                                src="https://bugstack.cn/images/roadmap/02-设计/024-PowerDesigner/1-数据库建模/images/数据库建模.png">
                             <a href="https://www.sap.com/products/technology-platform/powerdesigner-data-modeling-tools.html"
                                 target="_blank">
                                 <span>数据库建模</span>
@@ -2401,7 +2401,7 @@ export default {};
 }
 
 .production:hover {
-    background-color: #546ec5;
+    background-color: #e8e8e8;
     border-radius: 4px;
 }
 
