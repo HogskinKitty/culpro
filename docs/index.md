@@ -33,3 +33,36 @@ features:
 <br>
 
 <RoadMap />
+
+<div class="acknowledgements">
+  <h2 style="text-align: center; margin-top: 48px;">鸣谢</h2>
+  <p style="text-align: center; color: #666; margin: 16px 0;">
+    感谢以下开源项目和工具对本站的支持:
+  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; margin: 32px 0;">
+    <div style="text-align: center;">
+      <a href="https://vitepress.dev/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
+        <img src="https://vitepress.dev/vitepress-logo-large.webp" alt="VitePress" style="width: 40px; height: 40px; margin-bottom: 8px;">
+        <div>VitePress</div>
+      </a>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://cn.vuejs.org/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
+        <img src="https://cn.vuejs.org/logo.svg" alt="Vue" style="width: 40px; height: 40px; margin-bottom: 8px;">
+        <div>Vue.js</div>
+      </a>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://github.com/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 40px; height: 40px; margin-bottom: 8px;">
+        <div>GitHub</div>
+      </a>
+    </div>
+    <div>
+        <a href="https://bugstack.cn/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
+          <img src="https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/xiaofuge-blog-logo.png" alt="bugstack" style="width: 40px; height: 40px; margin-bottom: 8px;">
+          <div>小傅哥 bugstack 虫洞栈</div>
+        </a>
+    </div>
+  </div>
+</div>
