@@ -3,6 +3,7 @@ import './style/index.css'
 import mediumZoom from 'medium-zoom';
 import { onMounted, ref, watch, nextTick } from 'vue';
 import { useData, useRoute } from 'vitepress';
+import RoadMap from './component/RoadMap.vue';
 
 /**
  * Live2D 模型配置
@@ -21,6 +22,11 @@ const MODEL_CONFIGS = {
 
 export default {
   extends: DefaultTheme,
+
+  enhanceApp({ app }) {
+    // 注册自定义全局路书组件
+    app.component('RoadMap', RoadMap)
+  },
 
   setup() {
     const route = useRoute();
