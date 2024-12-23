@@ -33,6 +33,9 @@ export default defineConfig({
     },
   },
 
+  // 清除 URL 中的 .html 后缀，生成简洁的 URL
+  cleanUrls: true,
+
   // 主题配置
   themeConfig: {
     // logo
