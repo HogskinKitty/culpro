@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { nav } from './navbar'
-
+import mermaid from './theme/plugin/mermaid'
 export default defineConfig({
   // 语言
   lang: 'zh-CN',
@@ -30,6 +30,9 @@ export default defineConfig({
     image: {
       // 开启图片懒加载
       lazyLoading: true
+    },
+    config: (md) => {
+      md.use(mermaid)
     },
   },
 

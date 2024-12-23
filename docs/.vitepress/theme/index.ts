@@ -4,6 +4,7 @@ import mediumZoom from 'medium-zoom';
 import { onMounted, ref, watch, nextTick } from 'vue';
 import { useData, useRoute } from 'vitepress';
 import RoadMap from './component/RoadMap.vue';
+import Mermaid from './component/Mermaid.vue';
 
 /**
  * Live2D 模型配置
@@ -26,6 +27,7 @@ export default {
   enhanceApp({ app }) {
     // 注册自定义全局路书组件
     app.component('RoadMap', RoadMap)
+    app.component('Mermaid', Mermaid)
   },
 
   setup() {
