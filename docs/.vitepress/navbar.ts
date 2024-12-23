@@ -26,19 +26,50 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '数据库',
     items: [
-      { text: 'MySQL', link: '/database/mysql/' },
-      { text: 'PostgreSQL', link: '/database/postgresql/' },
-      { text: 'MongoDB', link: '/database/mongodb/' }
+      {
+        text: '关系型数据库',
+        items: [
+          { text: 'MySQL', link: '/database/mysql/' },
+          { text: 'PostgreSQL', link: '/database/postgresql/' },
+          { text: 'Oracle', link: '/database/oracle/' }
+        ]
+      },
+      {
+        text: '非关系型数据库',
+        items: [
+          { text: 'MongoDB', link: '/database/mongodb/' },
+        ]
+      }
     ]
   },
   {
     text: '中间件',
     items: [
-      { text: 'Redis', link: '/middleware/redis/' },
-      { text: 'RabbitMQ', link: '/middleware/rabbitmq/' },
-      { text: 'Kafka', link: '/middleware/kafka/' },
-      { text: 'ElasticSearch', link: '/middleware/elasticsearch/' }
-    ]
+      {
+        text: '缓存中间件',
+        items: [
+          { text: 'Redis', link: '/middleware/redis/' },
+          { text: 'Memcached', link: '/middleware/memcached/' }
+        ]
+      },
+      {
+        text: '消息中间件',
+        items: [
+          { text: 'RabbitMQ', link: '/middleware/rabbitmq/rabbitmq-introduce' },
+          { text: 'Kafka', link: '/middleware/kafka/' },
+          { text: 'RocketMQ', link: '/middleware/rocketmq/' }
+        ]
+      },
+      {
+        text: '搜索中间件',
+        items: [
+          { text: 'ElasticSearch', link: '/middleware/elasticsearch/' },
+          { text: 'Solr', link: '/middleware/solr/' },
+          { text: 'Lucene', link: '/middleware/lucene/' }
+        ]
+      }
+    ],
+
   },
   {
     text: '前端技术',
