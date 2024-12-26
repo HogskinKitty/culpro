@@ -65,7 +65,7 @@ export default {
             disable: true,
           },
           // 位置和样式
-          dockedPosition: 'left',
+          dockedPosition: 'right',
           primaryColor: '#546ec5',
           // 模型配置
           models: [{
