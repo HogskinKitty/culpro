@@ -36,8 +36,8 @@ jobs:
           # SCP参数
           ARGS: "-avzr --delete"
           # 源目录
-          SOURCE: ".vitepress/dist/"
-          # 服务器ip
+          SOURCE: "docs/.vitepress/dist/"
+          # 服务器ipK
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # 用户
           REMOTE_USER: "${{ secrets.REMOTE_USER }}"
