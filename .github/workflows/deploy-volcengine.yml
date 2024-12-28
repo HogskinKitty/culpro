@@ -1,0 +1,52 @@
+name: Deploy VitePress to Volcengine
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v3
+        with:
+        version: 9.5.0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build with VitePress
+        run: pnpm run docs:build
+
+      - name: Deploy to Nginx Server of Volcengine
+        uses: easingthemes/ssh-deploy@main
+        env:
+          # 私钥
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          # SCP参数
+          ARGS: "-avzr --delete"
+          # 源目录
+          SOURCE: ".vitepress/dist/"
+          # 服务器ip
+          REMOTE_HOST: ${{ secrets.REMOTE_VOLCENGINE_HOST }}
+          # 用户
+          REMOTE_USER: "${{ secrets.REMOTE_USER }}"
+          # 目标地址
+          TARGET: "${{ secrets.TARGET }}"
+
+      # 推送信息到微信
+      # - name: 推送信息到微信
+      #   uses: easychen/github-action-server-chan@main
+      #   with:
+      #     sendkey: ${{ secrets.SERVER_J }}
+      #     title: '网站更新完毕'
