@@ -37,16 +37,9 @@ jobs:
           ARGS: "-avzr --delete"
           # 源目录
           SOURCE: "docs/.vitepress/dist/"
-          # 服务器ipK
+          # 服务器ip
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # 用户
           REMOTE_USER: "${{ secrets.REMOTE_USER }}"
           # 目标地址
           TARGET: "${{ secrets.REMOTE_TARGET }}"
-
-      # 推送信息到微信
-      # - name: 推送信息到微信
-      #   uses: easychen/github-action-server-chan@main
-      #   with:
-      #     sendkey: ${{ secrets.SERVER_J }}
-      #     title: '网站更新完毕'
