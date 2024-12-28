@@ -39,6 +39,9 @@ export default defineConfig({
   // 清除 URL 中的 .html 后缀，生成简洁的 URL
   cleanUrls: true,
 
+  // 忽略死链，当设置为 true 时，VitePress 不会因为死链而导致构建失败
+  ignoreDeadLinks: true,
+
   // 主题配置
   themeConfig: {
     // logo
