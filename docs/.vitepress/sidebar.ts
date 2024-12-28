@@ -71,64 +71,45 @@ function sidebarMiddlewareRedis(): DefaultTheme.SidebarItem[] {
 function sidebarMiddlewareRabbitMQ(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '简介',
+      text: '快速开始',
       items: [
-        { text: '什么是 RabbitMQ?', link: 'rabbitmq-introduce' },
-        { text: '学习路线', link: 'learning-roadmap' },
-        { text: '基础概念', link: 'basic-concepts' }
+        { text: 'RabbitMQ 简介', link: 'what-is-rabbitmq' },
+        { text: '安装部署', link: 'install' },
+        { text: '管理界面使用', link: 'management-ui' }
       ]
     },
     {
-      text: '安装与配置',
+      text: '核心概念',
       items: [
-        { text: '各平台安装', link: 'install' },
-        { text: '基础配置', link: 'basic-config' },
-        { text: '管理界面使用', link: 'management-ui' },
-        { text: '用户与权限管理', link: 'user-management' }
+        { text: '交换机与队列', link: 'basic-concepts' },
+        { text: '消息路由', link: 'message-routing' },
+        { text: '消息模型', link: 'message-model' }
       ]
     },
     {
-      text: '核心功能',
+      text: '可靠性投递',
       items: [
-        { text: '消息发布与消费', link: 'message-pub-sub' },
-        { text: '消息确认机制', link: 'message-confirm' },
-        { text: '消息持久化', link: 'message-persist' },
-        { text: '死信队列', link: 'dead-letter-queue' },
-        { text: '延迟队列', link: 'delay-queue' },
-        { text: '优先级队列', link: 'priority-queue' }
+        { text: '发布确认', link: 'message-confirm' },
+        { text: '消费确认', link: 'consumer-ack' },
+        { text: '消息持久化', link: 'message-persist' }
       ]
     },
     {
       text: '高级特性',
       items: [
-        { text: '集群搭建', link: 'cluster-setup' },
-        { text: '镜像队列', link: 'mirror-queue' },
-        { text: '负载均衡', link: 'load-balance' },
-        { text: '消息追踪', link: 'message-trace' },
-        { text: '插件系统', link: 'plugin-system' }
+        { text: '死信队列', link: 'dead-letter' },
+        { text: '延迟队列', link: 'delay-queue' },
+        { text: '集群部署', link: 'mirror-queue' }
       ]
     },
     {
       text: '实战应用',
       items: [
-        { text: 'Spring AMQP 整合', link: 'spring-amqp-integration' },
-        { text: '常见应用场景', link: 'common-use-cases' },
-        { text: '性能优化', link: 'performance-optimization' },
-        { text: '监控告警', link: 'monitoring-alarm' },
-        { text: '问题排查', link: 'problem-troubleshooting' }
-      ]
-    },
-    {
-      text: '运维管理',
-      items: [
-        { text: '日常运维', link: 'daily-operation' },
-        { text: '备份恢复', link: 'backup-recovery' },
-        { text: '版本升级', link: 'version-upgrade' },
-        { text: '性能监控', link: 'performance-monitoring' },
-        { text: '故障处理', link: 'fault-handling' }
+        { text: 'Spring 集成', link: 'spring-amqp-integration' },
+        { text: '最佳实践', link: 'best-practices' },
+        { text: '运维监控', link: 'monitoring-alarm' }
       ]
     }
-
   ]
 }
 

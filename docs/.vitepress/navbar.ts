@@ -55,7 +55,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: '消息中间件',
         items: [
-          { text: 'RabbitMQ', link: '/middleware/rabbitmq/rabbitmq-introduce' },
+          { text: 'RabbitMQ', link: '/middleware/rabbitmq/what-is-rabbitmq' },
           { text: 'Kafka', link: '/middleware/kafka/' },
           { text: 'RocketMQ', link: '/middleware/rocketmq/' }
         ]
