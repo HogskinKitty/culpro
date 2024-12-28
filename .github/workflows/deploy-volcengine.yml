@@ -38,11 +38,11 @@ jobs:
           # 源目录
           SOURCE: ".vitepress/dist/"
           # 服务器ip
-          REMOTE_HOST: ${{ secrets.REMOTE_VOLCENGINE_HOST }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # 用户
           REMOTE_USER: "${{ secrets.REMOTE_USER }}"
           # 目标地址
-          TARGET: "${{ secrets.TARGET }}"
+          TARGET: "${{ secrets.REMOTE_TARGET }}"
 
       # 推送信息到微信
       # - name: 推送信息到微信
