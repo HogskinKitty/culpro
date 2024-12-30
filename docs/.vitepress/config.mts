@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { nav } from './navbar'
 import mermaid from './theme/plugin/mermaid'
+import d2 from "vitepress-plugin-d2"
+import { Layout, Theme, FileType } from 'vitepress-plugin-d2/dist/config';
+
 export default defineConfig({
   // 语言
   lang: 'zh-CN',
@@ -33,6 +36,26 @@ export default defineConfig({
     },
     config: (md) => {
       md.use(mermaid)
+
+      // Use D2 diagram plugin with optional configuration
+      md.use(d2, {
+        forceAppendix: false,
+        layout: Layout.ELK,
+        theme: Theme.NEUTRAL_DEFAULT,
+        darkTheme: Theme.DARK_MUAVE,
+        padding: 100,
+        animatedInterval: 0,
+        timeout: 120,
+        sketch: false,
+        center: false,
+        scale: -1,
+        target: "*",
+        fontItalic: null,
+        fontBold: null,
+        fontSemiBold: null,
+        fileType: FileType.SVG,
+        directory: "d2-diagrams",
+      });
     },
   },
 

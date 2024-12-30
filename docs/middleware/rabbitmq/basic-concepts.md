@@ -20,3 +20,10 @@
 绑定是交换机和队列之间的关联关系，定义了消息的路由规则。
 
 ## 实践示例
+
+```d2
+direction: right
+x -> y: hi {
+  style.animated: true
+}
+```
