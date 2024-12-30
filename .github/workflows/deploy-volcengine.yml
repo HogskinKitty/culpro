@@ -1,6 +1,8 @@
+# 构建 VitePress 站点并部署到火山引擎服务器
 name: Deploy VitePress to Volcengine
 
 on:
+  # 在 master 分支收到推送时触发工作流
   push:
     branches: [ master ]
 
@@ -8,38 +10,49 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # 检出代码仓库
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # 获取完整的 git 历史，用于生成 lastUpdated 信息
+
+      # 安装 D2 图表工具
+      - name: Install D2
+        run: curl -fsSL https://d2lang.com/install.sh | sh -s --
+
+      # 安装 pnpm 包管理器
       - uses: pnpm/action-setup@v3
         with:
           version: 9.5.0
 
+      # 设置 Node.js 环境
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
 
+      # 安装项目依赖
       - name: Install dependencies
         run: pnpm install
 
+      # 执行 VitePress 构建
       - name: Build with VitePress
         run: pnpm run docs:build
 
+      # 通过 SSH 部署到火山引擎服务器
       - name: Deploy to Nginx Server of Volcengine
         uses: easingthemes/ssh-deploy@main
         env:
-          # 私钥
+          # SSH 私钥，用于身份验证
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          # SCP参数
+          # SCP 传输参数：-a 归档模式，-v 详细输出，-z 压缩，-r 递归，--delete 删除目标端多余文件
           ARGS: "-avzr --delete"
-          # 源目录
+          # 本地源目录（构建产物目录）
           SOURCE: "docs/.vitepress/dist/"
-          # 服务器ip
+          # 远程服务器地址
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          # 用户
+          # 远程服务器登录用户
           REMOTE_USER: "${{ secrets.REMOTE_USER }}"
-          # 目标地址
+          # 远程服务器部署目标目录
           TARGET: "${{ secrets.REMOTE_TARGET }}"
