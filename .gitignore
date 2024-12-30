@@ -5,4 +5,5 @@
 # custom
 /.idea/
 /node_modules/
-
+/docs/d2-diagrams/
+/d2-diagrams/
