@@ -103,8 +103,8 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: '',
-      copyright: 'Copyright © 2024 HogskinKitty'
+      message: '<a style="color: #546ec5;" href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2025118127号</a>',
+      copyright: 'Copyright © 2024-2025 HogskinKitty'
     },
 
     // 搜索
