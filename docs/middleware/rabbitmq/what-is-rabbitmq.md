@@ -5,7 +5,7 @@ AMQP（Advanced Message Queuing Protocol）协议。
 
 ## 主要特性
 
-![RabbitMQ 主要特性](https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/rabbitmq-features.png)
+![RabbitMQ 主要特性](https://cdn.culpro.cn/images/rabbitmq-features.png)
 
 1. **可靠性**  
    - 支持消息持久化（持久化队列和消息）。
