@@ -14,7 +14,7 @@ export default defineConfig({
 
   // 站点地图
   sitemap: {
-    hostname: 'https://hogskinkitty.ftp.sh/',
+    hostname: 'https://culpro.cn',
   },
 
   // 描述
@@ -22,7 +22,7 @@ export default defineConfig({
 
   // 头部
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: 'https://cdn.culpro.cn/images/favicon.ico' }],
   ],
 
   // 最后更新时间
@@ -68,7 +68,7 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // logo
-    logo: '/logo.png',
+    logo: 'https://cdn.culpro.cn/images/logo.png',
 
     // 导航栏
     nav,
