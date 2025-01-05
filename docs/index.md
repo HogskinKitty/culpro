@@ -6,7 +6,7 @@ hero:
   text: "耕耘更好的程序"
   tagline: Cultivate Better Programs and Better Oneself.
   image:
-    src: /logo.png
+    src: https://cdn.culpro.cn/images/logo.png
     alt: CULPRO
   actions:
     - theme: brand
@@ -32,37 +32,109 @@ features:
 
 <br>
 
-<RoadMap />
+<!-- <RoadMap/> -->
 
 <div class="acknowledgements">
-  <h2 style="text-align: center; margin-top: 48px;">鸣谢</h2>
-  <p style="text-align: center; color: #666; margin: 16px 0;">
-    感谢以下开源项目和工具对本站的支持:
-  </p>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; margin: 32px 0;">
-    <div style="text-align: center;">
-      <a href="https://vitepress.dev/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
-        <img src="https://vitepress.dev/vitepress-logo-large.webp" alt="VitePress" style="width: 40px; height: 40px; margin-bottom: 8px;">
+  <h2>鸣谢</h2>
+  <p class="description">感谢以下开源项目和工具对本站的支持:</p>
+
+  <div class="tools-container">
+    <div class="tool-item">
+      <a href="https://vitepress.dev/" target="_blank" class="tool-link">
+        <img src="https://vitepress.dev/vitepress-logo-large.webp" alt="VitePress" class="tool-icon">
         <div>VitePress</div>
       </a>
     </div>
-    <div style="text-align: center;">
-      <a href="https://cn.vuejs.org/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
-        <img src="https://cn.vuejs.org/logo.svg" alt="Vue" style="width: 40px; height: 40px; margin-bottom: 8px;">
+    <div class="tool-item">
+      <a href="https://cn.vuejs.org/" target="_blank" class="tool-link">
+        <img src="https://cn.vuejs.org/logo.svg" alt="Vue" class="tool-icon">
         <div>Vue.js</div>
       </a>
     </div>
-    <div style="text-align: center;">
-      <a href="https://github.com/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 40px; height: 40px; margin-bottom: 8px;">
+    <div class="tool-item">
+      <a href="https://github.com/" target="_blank" class="tool-link">
+        <img src="https://cdn.culpro.cn/images/github-v1.png" alt="GitHub" class="tool-icon">
         <div>GitHub</div>
       </a>
     </div>
-    <div>
-        <a href="https://bugstack.cn/" target="_blank" style="color: #666; text-decoration: none; text-align: center;display: flex;flex-direction: column;align-items: center;">
-          <img src="https://raw.githubusercontent.com/HogskinKitty/assets-repository/master/culpro/xiaofuge-blog-logo.png" alt="bugstack" style="width: 40px; height: 40px; margin-bottom: 8px;">
-          <div>小傅哥 bugstack 虫洞栈</div>
-        </a>
+    <!-- <div class="tool-item">
+      <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="tool-link">
+        <img src="https://cdn.culpro.cn/images/upyun_logo1.png" alt="bugstack" class="tool-icon">
+        <div>又拍云</div>
+      </a>
+    </div> -->
+    <div class="tool-item">
+      <a href="https://bugstack.cn/" target="_blank" class="tool-link">
+        <img src="https://cdn.culpro.cn/images/xiaofuge-blog-logo.png" alt="bugstack" class="tool-icon">
+        <div>小傅哥 bugstack 虫洞栈</div>
+      </a>
     </div>
   </div>
+
+  <!-- <div class="upyun-container">
+    <span>
+      <span class="upyun-text-before">本网站由</span>
+      <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="upyun-link">
+        <img src="https://cdn.culpro.cn/images/upyun_logo2.png" alt="upyun" class="upyun-logo">
+      </a>
+      <span class="upyun-text-after">提供CDN加速/云存储服务</span>
+    </span>
+  </div> -->
 </div>
+
+<style>
+.acknowledgements {
+  h2 {
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .description {
+    text-align: center;
+    color: #666;
+    margin: 16px 0;
+  }
+
+  .tools-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 32px 0;
+  }
+
+  .tool-item {
+    text-align: center;
+  }
+
+  .tool-link {
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tool-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  /* .upyun-container {
+    text-align: center;
+  }
+
+  .upyun-logo {
+    height: 30px;
+    margin: 0 8px 2px 8px;
+  }
+
+  .upyun-link {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  } */
+}
+</style>
