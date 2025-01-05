@@ -1,10 +1,11 @@
 import DefaultTheme from 'vitepress/theme'
 import './style/index.css'
 import mediumZoom from 'medium-zoom';
-import { onMounted, ref, watch, nextTick } from 'vue';
+import { onMounted, ref, watch, h } from 'vue';
 import { useData, useRoute } from 'vitepress';
 import RoadMap from './component/RoadMap.vue';
 import Mermaid from './component/Mermaid.vue';
+import MNavLinks from "./component/MNavLinks.vue";
 
 /**
  * Live2D 模型配置
@@ -24,10 +25,24 @@ const MODEL_CONFIGS = {
 export default {
   extends: DefaultTheme,
 
+  Layout: () => {
+    const props: Record<string, any> = {}
+    // 获取 frontmatter
+    const { frontmatter } = useData()
+
+    /* 添加自定义 class */
+    if (frontmatter.value?.layoutClass) {
+      props.class = frontmatter.value.layoutClass
+    }
+
+    return h(DefaultTheme.Layout, props)
+  },
+
   enhanceApp({ app }) {
     // 注册自定义全局路书组件
     app.component('RoadMap', RoadMap)
     app.component('Mermaid', Mermaid)
+    app.component('MNavLinks', MNavLinks)
   },
 
   setup() {
