@@ -159,7 +159,7 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/HogskinKitty/culpro' }
+      { icon: 'github', link: 'https://github.com/HogskinKitty' }
     ]
   }
 })
