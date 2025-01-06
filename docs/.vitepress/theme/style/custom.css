@@ -1,0 +1,18 @@
+/* Feature 卡片的基础样式 */
+.VPFeature {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.25s;
+}
+
+/* 鼠标悬停时的边框效果 */
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* 可选：添加阴影效果 */
+.VPFeature:hover {
+  box-shadow: 0 0 10px rgba(var(--vp-c-brand-1), 0.1);
+} 

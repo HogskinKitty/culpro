@@ -22,20 +22,38 @@ hero:
 
 features:
   - icon: 💻
-    title: 技术深耕
-    details: 深入 Java 核心技术，JVM 调优，并发编程，Spring 全家桶源码分析与最佳实践
-  - icon: 📚
-    title: 实战经验
-    details: 分享架构设计、性能优化、问题排查等实战案例，提供可落地的解决方案
-  - icon: 🛠️
-    title: 效率工具
-    details: 精选开发工具与方法，打造高效开发工作流，助力 AI 编程实践
+    title: 前端物语
+    details: 整理前端常用知识点（面试八股文）如有异议按你的理解为主，不接受反驳
+    link: /xxx
+    linkText: 前端常用知识
   - icon: 📖
-    title: 进阶指南
-    details: 提供清晰的技术成长路线，从开发者到架构师的进阶之路
+    title: 源码阅读
+    details: 了解各种库的实现原理，学习其中的小技巧和冷知识
+    link: /xxx
+    linkText: 源码阅读
+  - icon: 💡
+    title: Workflow
+    details: 在工作中学到的一切（常用库/工具/奇淫技巧等）配合 CV 大法来更好的摸鱼
+    link: /xxx
+    linkText: 常用工具库
+  - icon: 💼
+    title: 提效工具
+    details: 工欲善其事，必先利其器。记录开发和日常使用中所用到的软件、插件、扩展等
+    link: /xxx
+    linkText: 提效工具
+  - icon: 🐞
+    title: 踩坑记录
+    details: 那些年我们踩过的坑，总有一些让你意想不到的问题
+    link: /xxx
+    linkText: 踩坑记录
+  - icon: 💯
+    title: 吾志所向，一往无前。
+    details: 一个想躺平的小开发
+    link: /xxx
+    linkText: 关于我
 ---
 
-<br>
+<!-- <br> -->
 
 <script setup lang="ts">
 import { NAV_DATA } from './index-data'
