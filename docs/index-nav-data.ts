@@ -1,4 +1,4 @@
-import type { NavData } from './.vitepress/theme/types'
+import type {NavData} from './.vitepress/theme/types'
 
 export const NAV_DATA: NavData[] = [
   {
@@ -47,10 +47,6 @@ export const NAV_DATA: NavData[] = [
       {
         icon: '/icons/json-cn.ico',
         title: 'Json 中文网',
-        badge: {
-          text: '请给茂茂点点小星星哦',
-          type: 'info',
-        },
         desc: 'JSON 在线解析及格式化验证',
         link: 'https://www.json.cn'
       }
@@ -78,35 +74,6 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://global-uploads.webflow.com/59deb588800ae30001ec19c9/5d4891e0e260e3c1bc37b100_beautiful%20ai%20favicon%20%20blue%20square.png',
         title: 'Beautiful.ai（PPT）',
         link: 'https://www.beautiful.ai'
-      }
-    ]
-  },
-  {
-    title: '茂茂的站点导航',
-    items: [
-      {
-        icon: '/logo.png',
-        title: '前端日常笔记',
-        desc: '日常笔记记录（零零散散啥都记系列）',
-        link: 'https://github.com/maomao1996/daily-notes'
-      },
-      {
-        icon: '/logo.png',
-        title: '前端思维导图',
-        desc: '用思维导图的方式总结个人所学知识',
-        link: 'https://mindmap.fe-mm.com'
-      },
-      {
-        icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
-        title: 'Qwerty Learner',
-        desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',
-        link: 'https://qwerty.fe-mm.com'
-      },
-      {
-        icon: '/logo.png',
-        title: 'mmPlayer',
-        desc: 'mmPlayer 在线音乐播放器',
-        link: 'https://netease-music.fe-mm.com'
       }
     ]
   },
@@ -564,8 +531,8 @@ export const NAV_DATA: NavData[] = [
       },
       {
         title: '博客园',
-        // icon: 'https://common.cnblogs.com/favicon.ico',
-        icon: '/icons/cnblogs.svg',
+        icon: 'https://common.cnblogs.com/favicon.ico',
+        // icon: '/icons/cnblogs.svg',
         desc: '博客园是一个面向开发者的知识分享社区',
         link: 'https://www.cnblogs.com'
       },
@@ -577,33 +544,4 @@ export const NAV_DATA: NavData[] = [
       }
     ]
   },
-  {
-    title: '摸鱼专用',
-    items: [
-      {
-        icon: 'https://momoyu.cc/icon-192.png',
-        title: '摸摸鱼热榜',
-        // desc: '聚合每日热门、搞笑、有趣、适合摸鱼的资讯',
-        link: 'https://momoyu.cc'
-      },
-      {
-        icon: 'https://v.qq.com/favicon.ico',
-        title: '腾讯视频',
-        // desc: '中国领先的在线视频媒体平台，海量高清视频在线观看',
-        link: 'https://v.qq.com'
-      },
-      {
-        icon: 'https://static.hdslb.com/mobile/img/512.png',
-        title: '哔哩哔哩',
-        // desc: '',
-        link: 'https://www.bilibili.com'
-      },
-      {
-        icon: 'https://www.youtube.com/s/desktop/014dbbed/img/favicon_48x48.png',
-        title: 'YouTube',
-        // desc: '',
-        link: 'https://www.youtube.com'
-      },
-    ]
-  }
 ]

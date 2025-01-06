@@ -1,6 +1,5 @@
 ---
 layout: home
-# layoutClass: m-nav-layout
 
 hero:
   name: "CULPRO"
@@ -86,21 +85,33 @@ import { NAV_DATA } from './index-nav-data'
         <div>GitHub</div>
       </a>
     </div>
-    <!-- <div class="tool-item">
+    <div class="tool-item">
       <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="tool-link">
         <img src="https://cdn.culpro.cn/images/upyun_logo1.png" alt="bugstack" class="tool-icon">
         <div>又拍云</div>
       </a>
-    </div> -->
+    </div>
     <div class="tool-item">
       <a href="https://bugstack.cn/" target="_blank" class="tool-link">
         <img src="https://cdn.culpro.cn/images/xiaofuge-blog-logo.png" alt="bugstack" class="tool-icon">
         <div>小傅哥 bugstack 虫洞栈</div>
       </a>
     </div>
+    <div class="tool-item">
+      <a href="https://fe-mm.com/" target="_blank" class="tool-link">
+        <img src="https://cdn.culpro.cn/images/maomao-logo.png" alt="bugstack" class="tool-icon">
+        <div>茂神</div>
+      </a>
+    </div>
+    <div class="tool-item">
+      <a href="https://vitepress.yiov.top/" target="_blank" class="tool-link">
+        <img src="https://vitepress.dev/vitepress-logo-large.webp" alt="bugstack" class="tool-icon">
+        <div>VitePress 中文教程</div>
+      </a>
+    </div>
   </div>
 
-  <!-- <div class="upyun-container">
+  <div class="upyun-container">
     <span>
       <span class="upyun-text-before">本网站由</span>
       <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="upyun-link">
@@ -108,7 +119,7 @@ import { NAV_DATA } from './index-nav-data'
       </a>
       <span class="upyun-text-after">提供CDN加速/云存储服务</span>
     </span>
-  </div> -->
+  </div>
 </div>
 
 <style>
@@ -151,7 +162,7 @@ import { NAV_DATA } from './index-nav-data'
     margin-bottom: 8px;
   }
 
-  /* .upyun-container {
+  .upyun-container {
     text-align: center;
   }
 
@@ -164,6 +175,6 @@ import { NAV_DATA } from './index-nav-data'
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-  } */
+  }
 }
 </style>
