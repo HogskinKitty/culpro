@@ -3,7 +3,6 @@
   position: relative;
   border: 1px solid transparent;
   border-radius: 12px;
-  padding: 24px;
   transition: border-color 0.25s;
 }
 
