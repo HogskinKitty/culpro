@@ -34,6 +34,9 @@ export default defineConfig({
       // 开启图片懒加载
       lazyLoading: true
     },
+    //行号显示
+    lineNumbers: true,
+
     config: (md) => {
       md.use(mermaid)
 

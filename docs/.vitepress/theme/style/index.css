@@ -1,3 +1,7 @@
 @import './rainbow.css';
 @import './var.css';
-@import './custom.css';
+@import './custom-features.css';
+@import './vp-code.css';
+@import './custom-block.css';
+@import './vp-code-title.css';
+@import './vp-code-group.css';
