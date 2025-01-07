@@ -8,6 +8,7 @@ import Mermaid from './component/Mermaid.vue';
 import MNavLinks from "./component/MNavLinks.vue";
 import { useSyncCodeGroups } from './components/SyncCodeGroups'
 import './style/sync-code-groups.css'
+import 'virtual:group-icons.css'
 
 /**
  * Live2D 模型配置

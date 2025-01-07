@@ -4,6 +4,7 @@ import { nav } from './navbar'
 import mermaid from './theme/plugin/mermaid'
 import d2 from "vitepress-plugin-d2"
 import { Layout, Theme, FileType } from 'vitepress-plugin-d2/dist/config';
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 export default defineConfig({
   // 语言
@@ -38,7 +39,11 @@ export default defineConfig({
     lineNumbers: true,
 
     config: (md) => {
+      // mermaid
       md.use(mermaid)
+
+      // 代码组图标
+      md.use(groupIconMdPlugin)
 
       // Use D2 diagram plugin with optional configuration
       md.use(d2, {
@@ -60,6 +65,17 @@ export default defineConfig({
         directory: "d2-diagrams",
       });
     },
+  },
+
+  vite: {
+    plugins: [
+      groupIconVitePlugin({
+        customIcon: {
+          'ubuntu': 'logos:ubuntu',
+          'centos': 'logos:centos-icon',
+        },
+      })
+    ],
   },
 
   // 清除 URL 中的 .html 后缀，生成简洁的 URL
