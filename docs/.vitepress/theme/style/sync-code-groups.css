@@ -1,0 +1,15 @@
+.vp-code-group[data-sync-group] {
+    margin-bottom: 1rem;
+}
+
+.vp-code-group .blocks > div {
+    display: none;
+}
+
+.vp-code-group .blocks > div.active {
+    display: block !important;
+}
+
+.vp-code-group .tabs label {
+    cursor: pointer;
+}

@@ -6,6 +6,8 @@ import { useData, useRoute } from 'vitepress';
 import RoadMap from './component/RoadMap.vue';
 import Mermaid from './component/Mermaid.vue';
 import MNavLinks from "./component/MNavLinks.vue";
+import { useSyncCodeGroups } from './components/SyncCodeGroups'
+import './style/sync-code-groups.css'
 
 /**
  * Live2D 模型配置
@@ -126,5 +128,7 @@ export default {
         console.error('模型切换失败:', error);
       }
     });
+
+    useSyncCodeGroups()
   }
 }
