@@ -12,14 +12,14 @@
 
 ::: code-group
 
-```bash [Ubuntu/Debian]
+```bash [Ubuntu]
 wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb
 sudo dpkg -i erlang-solutions_2.0_all.deb
 sudo apt-get update
 sudo apt-get install -y erlang
 ```
 
-```bash [CentOS/RHEL]
+```bash [CentOS]
 sudo yum install -y epel-release
 sudo yum install -y erlang
 ```
@@ -30,14 +30,14 @@ sudo yum install -y erlang
 
 ::: code-group
 
-```bash [Ubuntu/Debian]
+```bash [Ubuntu]
 echo "deb https://dl.bintray.com/rabbitmq/debian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/bintray.rabbitmq.list
 wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install -y rabbitmq-server
 ```
 
-```bash [CentOS/RHEL]
+```bash [CentOS]
 sudo yum install -y https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.9.11/rabbitmq-server-3.9.11-1.el7.noarch.rpm
 sudo yum install -y rabbitmq-server
 ```
