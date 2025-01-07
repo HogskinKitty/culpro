@@ -52,14 +52,10 @@ features:
     linkText: 实践指南
 ---
 
-<!-- <br> -->
-
 <script setup lang="ts">
 import { NAV_DATA } from './index-nav-data'
 </script>
 
-<!-- <RoadMap/> -->
-<style src="/.vitepress/theme/style/nav.css"></style>
 <MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/>
 
 <div class="acknowledgements">
