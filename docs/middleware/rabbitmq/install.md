@@ -75,11 +75,13 @@ sudo rabbitmq-plugins enable rabbitmq_management
 ### 安装 Erlang
 
 1. 下载 Erlang 安装包：[Erlang 官网](https://www.erlang.org/downloads)。
+
 2. 运行安装包，按照提示完成安装。
 
 ### 安装 RabbitMQ
 
 1. 下载 RabbitMQ 安装包：[RabbitMQ 官网](https://www.rabbitmq.com/install-windows.html)。
+
 2. 运行安装包，按照提示完成安装。
 
 ### 启动 RabbitMQ
@@ -131,6 +133,7 @@ rabbitmq-plugins enable rabbitmq_management
 ### 安装 Docker
 
 1. 下载并安装 Docker：[Docker 官网](https://www.docker.com/get-started)。
+
 2. 启动 Docker 服务。
 
 ### 拉取 RabbitMQ 镜像
@@ -154,6 +157,7 @@ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-managemen
 ## 验证安装
 
 1. 访问 RabbitMQ 管理界面：`http://localhost:15672`，使用默认用户名 `guest` 和密码 `guest` 登录。
+
 2. 检查 RabbitMQ 服务状态：
 
    ```bash
