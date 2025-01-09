@@ -75,41 +75,43 @@ function sidebarMiddlewareRabbitMQ(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'RabbitMQ 简介', link: 'what-is-rabbitmq' },
         { text: '安装部署', link: 'install' },
-        { text: '管理界面使用', link: 'management-ui' }
       ]
     },
     {
-      text: '核心概念',
+      text: '基础概念',
       items: [
-        { text: '交换机与队列', link: 'basic-concepts' },
+        { text: '交换机与队列', link: 'exchanges-and-queues' },
         { text: '消息路由', link: 'message-routing' },
         { text: '消息模型', link: 'message-model' }
       ]
     },
     {
-      text: '可靠性投递',
+      text: '进阶特性',
       items: [
-        { text: '发布确认', link: 'message-confirm' },
-        { text: '消费确认', link: 'consumer-ack' },
-        { text: '消息持久化', link: 'message-persist' }
+        { text: '发布确认机制', link: 'message-confirm' },
+        { text: '消费确认机制', link: 'consumer-ack' },
+        { text: '消息持久化', link: 'message-persist' },
+        { text: '死信队列', link: 'dead-letter' },
+        { text: '延迟队列', link: 'delay-queue' }
       ]
     },
     {
-      text: '高级特性',
+      text: '集群与运维',
       items: [
-        { text: '死信队列', link: 'dead-letter' },
-        { text: '延迟队列', link: 'delay-queue' },
-        { text: '集群部署', link: 'mirror-queue' }
+        { text: '集群架构', link: 'cluster-architecture' },
+        { text: '集群部署', link: 'mirror-queue' },
+        { text: '运维监控', link: 'monitoring-alarm' },
+        { text: '常见问题排查', link: 'troubleshooting' }
       ]
     },
     {
       text: '实战应用',
       items: [
-        { text: 'Spring 集成', link: 'spring-amqp-integration' },
+        { text: 'Spring AMQP 集成', link: 'spring-amqp-integration' },
         { text: '最佳实践', link: 'best-practices' },
-        { text: '运维监控', link: 'monitoring-alarm' }
+        { text: '性能优化', link: 'performance-tuning' }
       ]
-    }
+    },
   ]
 }
 
