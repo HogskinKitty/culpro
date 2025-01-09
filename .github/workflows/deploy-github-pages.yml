@@ -36,6 +36,10 @@ jobs:
       - name: Install D2
         run: curl -fsSL https://d2lang.com/install.sh | sh -s --
 
+      # 安装 TALA 布局引擎
+      - name: Install Tala
+        run: curl -fsSL https://d2lang.com/install.sh | sh -s -- --tala
+
       # 安装 pnpm 包管理器
       - name: Install pnpm
         uses: pnpm/action-setup@v3

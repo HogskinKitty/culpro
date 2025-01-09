@@ -141,17 +141,411 @@ Producer -> Broker.Exchange -> Broker.Queue -> Consumer: {
 
 ## 常见应用场景
 
-1. **异步任务处理**  
-   - 例如订单处理、邮件发送等需要解耦和非实时响应的场景。
+1. **异步任务处理**
+   - 将耗时操作异步化，提升系统响应速度
+   - 典型场景：订单处理、邮件发送、短信通知等
+   - 优势：提高用户体验，系统吞吐量提升
 
-2. **系统解耦**  
-   - 将生产者和消费者分离，降低系统间的耦合度。
+```d2
+:::config
+layout: TALA
+:::
 
-3. **流量削峰填谷**  
-   - 在高并发情况下，缓冲请求流量，保护核心服务。
+direction: right
 
-4. **日志聚合**  
-   - 集中收集和处理分布式系统的日志。
+User: 用户 {
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
 
-5. **事件驱动架构**  
-   - 用于实现微服务间的事件通知。
+API: API 服务 {
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+RabbitMQ: 消息队列 {
+  shape: queue
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+Worker: 任务处理器 {
+  shape: rectangle
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+DB: 数据库 {
+  shape: cylinder
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+User -> API: "1. 提交订单" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+API -> DB: "2. 保存订单" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+API -> RabbitMQ: "3. 发送邮件任务" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+API -> User: "4. 返回成功" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+RabbitMQ -> Worker: "5. 处理邮件任务" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+*.style.border-radius: 10
+```
+
+2. **系统解耦**
+   - 通过消息队列实现系统间的松耦合
+   - 各子系统独立演进，互不影响
+   - 便于系统扩展和维护
+
+```d2
+:::config
+layout: TALA
+:::
+
+direction: right
+
+订单系统: {
+  shape: rectangle
+  style: {
+
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+RabbitMQ: {
+  shape: queue
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+库存系统: {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+支付系统: {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+物流系统: {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+订单系统 -> RabbitMQ: {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+RabbitMQ -> 库存系统: {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+RabbitMQ -> 支付系统: {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+RabbitMQ -> 物流系统: {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+*.style.border-radius: 10
+```
+
+3. **流量削峰填谷**
+   - 应对突发流量，保护后端系统
+   - 通过队列缓冲，平滑处理请求
+   - 避免系统过载，提高稳定性
+
+```d2
+:::config
+layout: TALA
+:::
+
+direction: right
+
+Users: 用户请求 {
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+API: API网关 {
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+RabbitMQ: 消息队列 {
+  shape: queue
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+Workers: 处理服务集群 {
+  style: {
+    stroke-width: 2
+    shadow: true
+    multiple: true
+  }
+}
+
+Users -> API: "大量并发请求" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+API -> RabbitMQ: "请求缓冲" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+RabbitMQ -> Workers: "削峰后的请求" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+*.style.border-radius: 10
+```
+
+4. **日志聚合**
+   - 统一收集分布式系统的日志
+   - 集中处理和分析
+   - 便于问题排查和监控
+
+```d2
+:::config
+layout: TALA
+:::
+
+direction: right
+
+Service1: 服务1 {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+Service2: 服务2 {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+Service3: 服务3 {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+RabbitMQ: 日志队列 {
+  shape: queue
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+LogProcessor: 日志处理器 {
+  shape: rectangle
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+ES: Elasticsearch {
+   shape: cylinder
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+Service1 -> RabbitMQ:{
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+Service2 -> RabbitMQ:{
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+Service3 -> RabbitMQ:{
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+RabbitMQ -> LogProcessor: {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+LogProcessor -> ES: {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+*.style.border-radius: 10
+```
+
+5. **事件驱动架构**
+   - 实现微服务间的事件通知
+   - 支持复杂业务流程的解耦
+   - 提高系统的可扩展性和维护性
+
+```d2
+:::config
+layout: TALA
+:::
+
+direction: right
+
+OrderService: 订单服务 {
+  shape: rectangle
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+RabbitMQ: 事件总线 {
+  shape: queue
+  style: {
+    stroke-width: 2
+    shadow: true
+  }
+}
+
+库存服务: {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+支付服务: {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+通知服务: {
+   shape: rectangle
+   style: {
+   stroke-width: 2
+   shadow: true
+   }
+}
+
+OrderService -> RabbitMQ: "订单创建事件" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+RabbitMQ -> 库存服务: "扣减库存" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+RabbitMQ -> 支付服务: "创建支付" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+RabbitMQ -> 通知服务: "发送通知" {
+  style: {
+    stroke-width: 2
+    animated: true
+  }
+}
+
+*.style.border-radius: 10
+```
