@@ -16,15 +16,15 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
     {
       text: 'Java 基础',
       items: [
-        { text: '示例内容', link: 'basic' },
+        { text: '基础语法', link: 'basic' },
       ],
     },
-    {
-      text: 'JVM',
-      items: [
-        { text: '示例内容', link: 'jvm' },
-      ],
-    },
+    // {
+    //   text: 'JVM',
+    //   items: [
+    //     { text: '示例内容', link: 'jvm' },
+    //   ],
+    // },
   ]
 }
 
