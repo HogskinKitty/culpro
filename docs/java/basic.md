@@ -1,4 +1,4 @@
-# 基础语法
+# Java 基础语法
 
 ## 数据类型
 
@@ -42,31 +42,16 @@ CharType: "字符型" {
 }
 ```
 
-### 引用类型
+> [!tip]包装类
+> Java 为每个基本数据类型提供了对应的**包装类**，使其能作为对象使用。包装类主要用于集合、泛型等需要对象的场景。
 
-- 类（Class）
-- 接口（Interface）
-- 数组 (Array)
+**自动装箱与拆箱**
 
-### 自动装箱与拆箱
-
-```d2
-AutoBoxingFlow: {
-  style.stroke: "#4a90e2"
-  基本类型 -> 包装类: 自动装箱 (valueOf)
-  包装类 -> 基本类型: 自动拆箱 (xxxValue)
-  
-  缓存机制: "-128~127 复用对象" {
-    shape: class
-  }
-}
-```
-
-| 机制   | 触发场景                  | 内存分配                                           | 代码示例                                         |
-|------|-----------------------|------------------------------------------------|----------------------------------------------|
-| 自动装箱 | 集合泛型操作<br/>方法参数传递     | <span style="color: #4a90e2">堆内存（对象实例）</span>  | `List<Integer> list = Arrays.asList(1,2,3);` |
-| 自动拆箱 | 算术运算<br/>包装类型比较       | <span style="color: #50e3c2">栈内存（基本类型值）</span> | `int sum = list.get(0) + list.get(1);`       |
-| 缓存机制 | -128~127 的 Integer 创建 | <span style="color: #9013fe">方法区（缓存池）</span>   | `Integer a=127,b=127; // a==b → true`        |
+| 机制   | 触发场景                    | 内存分配                                           | 代码示例                                         |
+|------|-------------------------|------------------------------------------------|----------------------------------------------|
+| 自动装箱 | 集合泛型操作<br/>方法参数传递       | <span style="color: #4a90e2">堆内存（对象实例）</span>  | `List<Integer> list = Arrays.asList(1,2,3);` |
+| 自动拆箱 | 算术运算<br/>包装类型比较         | <span style="color: #50e3c2">栈内存（基本类型值）</span> | `int sum = list.get(0) + list.get(1);`       |
+| 缓存机制 | -128 ~ 127 的 Integer 创建 | <span style="color: #9013fe">方法区（缓存池）</span>   | `Integer a=127,b=127; // a==b → true`        |
 
 <style>
 .md-typeset table:not([class]) th:nth-child(4),
@@ -76,7 +61,29 @@ AutoBoxingFlow: {
 }
 </style>
 
-> [!warning]
+```d2
+AutoBoxingFlow: {
+  style.stroke: "#4a90e2"
+  基本类型 -> 包装类: 自动装箱 (valueOf) {
+    style: {
+      stroke-width: 2
+      animated: true
+    }
+  }
+  包装类 -> 基本类型: 自动拆箱 (xxxValue) {
+    style: {
+      stroke-width: 2
+      animated: true
+    }
+  }
+  
+  缓存机制: "-128~127 复用对象" {
+    shape: class
+  }
+}
+```
+
+> [!warning]注意
 > 拆箱陷阱：包装类对象可能为null
 
 ```java
@@ -86,13 +93,9 @@ Integer total = null;
 int actual = total; 
 ```
 
-#### 类型转换增强
+**类型转换增强**
 
 ```java
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class TypeConversionTest {
     
     @Test
@@ -135,12 +138,18 @@ class TypeConversionTest {
 }
 ```
 
+### 引用类型
+
+- 类（Class）
+- 接口（Interface）
+- 数组 (Array)
+- 枚举（Enum）
+
 ## 变量
 
-变量本质是命名的数据存储单元，声明语法为`类型 标识符 [= 初始值]`，局部变量必须显式初始化。
+变量本质是命名的数据存储单元，声明语法为`类型 标识符 [= 初始值]`。
 
-> [!tip]
-> 内存分配原理
+> [!tip]内存分配原理
 > - 基本类型：栈帧中的局部变量表（方法调用结束立即回收）
 > - 对象类型：堆内存存储对象实例，栈中存储引用地址（4字节）
 > - 常量池：存储字符串字面量和编译期确定的常量
@@ -211,10 +220,16 @@ ClassScope: "类作用域" {
 
 ## 常量
 
-### 存储机制
+常量是在程序运行期间不可改变的值。
+
+| 常量类型        | 存储位置 | 生命周期      | 示例                     |
+|-------------|------|-----------|------------------------|
+| 编译时常量       | 方法区  | 类卸载时回收    | `final class`          |
+| 运行时常量对象     | 堆内存  | 随对象 GC 回收 | `Integer.valueOf(127)` |
+| 局部 final 常量 | 栈内存  | 方法执行期间    | `final int local = 5`  |
 
 ```d2
-MemoryLayout: {
+MemoryLayout: 内存布局 {
   方法区: {
     style.stroke: "#9013fe"
     类常量池: "编译时常量\n(final 类/方法/基本类型)"
@@ -232,13 +247,7 @@ MemoryLayout: {
 }
 ```
 
-| 常量类型        | 存储位置 | 生命周期    | 示例                     |
-|-------------|------|---------|------------------------|
-| 编译时常量       | 方法区  | 类卸载时回收  | `final class`          |
-| 运行时常量对象     | 堆内存  | 随对象GC回收 | `Integer.valueOf(127)` |
-| 局部 final 常量 | 栈内存  | 方法执行期间  | `final int local=5`    |
-
-### 应用场景
+**应用场景**
 
 ```java
 // 1. final类（编译时常量）
@@ -272,245 +281,320 @@ void calculate() {
 #### 符号常量
 
 - 类常量：`static final`修饰，类加载时初始化
-- 对象常量：包装类型缓存（-128~127）
+- 对象常量：包装类型缓存（-128 ~ 127）
 - 局部常量：方法内`final`变量
 
 ## 运算符
 
-| 类型 | 运算符       |
-|----|-----------|
-| 算术 | + - * / % |
-| 比较 | > < == != |
-| 逻辑 | && \|\| ! |
+Java 中运算符按功能分类：
 
-### 运算符优先级（从上到下）
+### 算术运算符
 
-| 优先级 | 运算符                                | 结合性 |
-|-----|------------------------------------|-----|
-| 1   | () [] .                            | 左→右 |
-| 2   | ! ~ ++ -- +(正) -(负)                | 右→左 |
-| 3   | * / %                              | 左→右 |
-| 4   | + -                                | 左→右 |
-| 5   | << >> >>>                          | 左→右 |
-| 6   | < <= > >= instanceof               | 左→右 |
-| 7   | == !=                              | 左→右 |
-| 8   | &                                  | 左→右 |
-| 9   | ^                                  | 左→右 |
-| 10  | \|                                 | 左→右 |
-| 11  | &&                                 | 左→右 |
-| 12  | \|\|                               | 左→右 |
-| 13  | ?:                                 | 右→左 |
-| 14  | = += -= *= /= %= &= ^= \|= <<= >>= | 右→左 |
+- **基本运算**
 
-> [!note]
-> **结合性解析**：
-> - **左结合**：同优先级运算符从左到右计算（如 `a + b - c` → `(a + b) - c`）
-> - **右结合**：从右到左计算（如 `x = y = 5` → `x = (y = 5)`）
+  `+`（加）、`-`（减）、`*`（乘）、`/`（除）、`%`（取模）
+  ```java
+  int a = 10 / 3; // 3（整数除法）
+  double b = 10 % 3; // 1.0（取余）
+  ```
+
+- **自增/自减**
+
+  `++`（自增）、`--`（自减）
+  ```java
+  int i = 5;
+  int j = i++; // j=5, i=6（后缀：先赋值后自增）
+  int k = ++i; // k=7, i=7（前缀：先自增后赋值）
+  ```
+
+### 关系运算符
+
+- 比较两个值的关系，返回 `boolean` 类型（`true`/`false`）
+
+  `==`（等于）、`!=`（不等于）、`>`（大于）、`<`（小于）、`>=`（大于等于）、`<=`（小于等于）
+  ```java
+  boolean result = (10 > 5); // true
+  ```
+
+### 逻辑运算符
+
+- **基本逻辑运算**
+
+  `&&`（逻辑与）、`||`（逻辑或）、`!`（逻辑非）
+  ```java
+  boolean res = (true && false); // false
+  ```
+
+- **短路特性**
+
+  `&&` 和 `||` 会短路：若左侧可确定结果，右侧不执行
+  ```java
+  if (a != null && a.getValue() > 0) { ... } // 避免空指针
+  ```
+
+- **非短路逻辑**
+
+  `&`（按位与）、`|`（按位或）：两侧都会执行
+  ```java
+  boolean b = (a() & b()); // 无论 a() 结果如何，b() 都会执行
+  ```
+
+### 位运算符
+
+- 直接操作二进制位补码，适用于整数类型（int, long 等）
+
+  `&`（按位与）、`|`（按位或）、`^`（按位异或）、`~`（按位取反）
+  ```java
+  int x = 5 & 3; // 0101 & 0011 = 0001 → 1
+  ```
+
+- **移位运算符**
+
+  `<<`（左移）、`>>`（带符号右移）、`>>>`（无符号右移）
+  ```java
+  int a = 8 << 1; // 16（左移1位，相当于乘2）
+
+  int b = -8 >> 1; // -4（保留符号位）
+  
+  int c = -8 >>> 1; // 2147483644（高位补0）
+  ```
+
+### 赋值运算符
+
+- **基本赋值**
+
+  `=`（赋值）
+  ```java
+  int num = 10;
+  ```
+
+- **复合赋值**
+
+  `+=`、`-=`、`*=`、`/=`、`%=`、`<<=`、`>>=` 等
+  ```java
+  num += 5; // 等价于 num = num + 5;
+  ```
+
+### 条件运算符（三元运算符或三元运算符）
+
+- 语法：`条件 ? 表达式1 : 表达式2`
+
+  若条件为 `true`，返回`表达式1`的值，否则返回`表达式2`的值
+  ```java
+  int max = (a > b) ? a : b; // 取较大值
+  ```
+
+### 类型检查运算符
+
+- `instanceof`
+
+  判断对象是否属于某个类（或接口）的实例
+  ```java
+  String str = "hello";
+  boolean isString = str instanceof String; // true
+  ```
+
+### 其他运算符
+
+- **字符串连接符** `+`
+
+  拼接字符串（若操作数为非字符串类型，会自动转换）
+  ```java
+  String s = "num: " + 5 + 10; // "num: 510"
+  ```
+
+### 运算符优先级（从高到低）
+
+| 优先级 | 运算符                                       |
+|-----|-------------------------------------------|
+| 最高  | `()`、`[]`、`.`（方法调用、属性访问）                  |
+| ↓   | `!`、`~`、`++`、`--`（单目运算）                   |
+| ↓   | `*`、`/`、`%`                               |
+| ↓   | `+`、`-`                                   |
+| ↓   | `<<`、`>>`、`>>>`                           |
+| ↓   | `>`、`>=`、`<`、`<=`、`instanceof`            |
+| ↓   | `==`、`!=`                                 |
+| ↓   | `&`、`^`、`                       \|`       |
+| ↓   | `&&`、`                              \|\|` |
+| ↓   | `?:`（三元运算符）                               |
+| 最低  | `=`、`+=`、`-=` 等赋值运算符                      |
+
+> [!warning]注意事项
 >
-> **典型示例**：
-> - 右结合：赋值运算（参考下方赋值表达式）、三目运算符（见[类型转换增强](#类型转换增强)章节示例）
-> - 左结合：算术运算（参考[自动类型提升](#自动装箱与拆箱)规则）、比较运算（与[表达式分类](#表达式分类)逻辑关联）
-
-<style>
-.md-typeset table:not([class]) th:nth-child(3),
-.md-typeset table:not([class]) td:nth-child(3) {
-    width: 15%;
-    min-width: 100px;
-}
-</style>
-
-## 表达式
-
-### 表达式分类
-
-| 类型    | 示例               | 运算规则            |
-|-------|------------------|-----------------|
-| 算术表达式 | `(a + b) * c`    | 遵循运算符优先级，自动类型提升 |
-| 关系表达式 | `age > 18`       | 返回boolean类型     |
-| 逻辑表达式 | `flag1 && flag2` | 短路求值特性          |
-| 赋值表达式 | `x = y += 5`     | 右结合性            |
-
-### 类型转换
-
-```d2
-TypeConversion: {
-  自动提升: {
-    byte -> short
-    short -> int
-    char -> int
-    int -> long
-    float -> double
-  }
-  强制转换: {
-    style.stroke-dash: 3
-    大类型 -> 小类型: 强制转换 (type)value
-  }
-}
-```
-
-### 三目运算符规范
-
-```java
-// 类型必须兼容
-int max = (a > b) ? a : b;
-
-// 自动装箱拆箱示例
-Integer result = (flag) ? 100 : Integer.valueOf(200);
-```
-
-| 转换类型 | 场景        | 示例                 |
-|------|-----------|--------------------|
-| 自动提升 | 二元运算      | `byte + int → int` |
-| 强制转换 | 大数据类型转小类型 | `(int) 3.14 → 3`   |
-| 自动装箱 | 基本↔包装类    | `Integer i = 10;`  |
+> 1. **整数除法**：`10 / 3` 结果为 `3`，若需小数结果，需强制类型转换。
+> 2. **逻辑短路**：利用 `&&` 和 `||` 避免不必要的计算或异常。
+> 3. **字符串拼接**：`+` 可能导致非预期结果，建议使用 `StringBuilder` 或括号控制优先级。
 
 ## 流程控制
 
-### 跳转控制
+### 顺序结构
 
+程序中最简单最基本的流程控制，没有特定的语法结构，按照代码的先后顺序，依次执行。
+
+### 选择结构
+
+- **if 语句**
 ```java
-class FlowControlTest {
-    
-    // break 跳出循环
-    @Test
-    void testBreakLabel() {
-        List<Integer> loopCounter = new ArrayList<>();
-        
-        outer:
-        for (int i : List.of(1, 2, 3)) {
-            for (String j : List.of("a", "b")) {
-                if (i == 2)
-                    break outer;
-                loopCounter.add(i);
-            }
-        }
-        
-        assertEquals(List.of(1, 1), loopCounter);
-    }
-    
-    // continue 跳过当前循环
-    @Test
-    void testContinueUsage() {
-        List<Integer> oddNumbers = new ArrayList<>();
-        
-        for (int i = 0; i < 5; i++) {
-            if (i % 2 == 0)
-                continue;
-            oddNumbers.add(i);
-        }
-        
-        assertEquals(List.of(1, 3), oddNumbers);
-    }
-    
-    // return 结束当前方法
-    @Test
-    void testReturnVsExit() {
-        class Calculator {
-            
-            int calculate(boolean error) {
-                if (error)
-                    return -1;
-                return 0;
-            }
-        }
-        
-        Calculator calc = new Calculator();
-        assertEquals(-1, calc.calculate(true));
-        assertEquals(0, calc.calculate(false));
-    }
+// 单分支结构
+if (布尔表达式) {
+    // 条件为真时执行
+}
+
+// 双分支结构
+if (布尔表达式) {
+    // 条件为真时执行
+} else {
+    // 条件为假时执行
+}
+
+// 多分支结构
+if (布尔表达式1) {
+    // 条件1为真时执行
+} else if (布尔表达式2) {
+    // 条件2为真时执行
+} else {
+    // 所有条件都为假时执行
 }
 ```
 
-### switch 表达式
-
+- **switch 语句**
 ```java
-class SwitchTest {
-    
-    @Test
-    void testTraditionalSwitch() {
-        String dayType = "";
-        DayOfWeek day = DayOfWeek.MONDAY;
-        
-        switch (day) {
-            case MONDAY:
-            case TUESDAY:
-            case WEDNESDAY:
-            case THURSDAY:
-            case FRIDAY:
-                dayType = "工作日";
-                break;
-            case SATURDAY:
-            case SUNDAY:
-                dayType = "周末";
-                break;
-            default:
-                fail("Unexpected value: " + day);
-        }
-        
-        assertEquals("工作日", dayType);
-    }
-}
-
-enum DayOfWeek {
-    MONDAY,
-    TUESDAY,
-    WEDNESDAY,
-    THURSDAY,
-    FRIDAY,
-    SATURDAY,
-    SUNDAY
+switch (表达式) {
+  case 值1: 
+      // 匹配值1时执行
+      break; // 跳出 switch
+  case 值2:
+  case 值3: // 多条件匹配
+      // 匹配值2或值3时执行
+      break;
+  default: 
+      // 所有case都不匹配时执行
 }
 ```
 
-### 条件语句
-
+**基础用法示例**
 ```java
-class ConditionTest {
+class SelectionExample {
     
     @Test
-    void testIfElse() {
+    void testIfStatement() {
+        int score = 85;
         String result = "";
-        int score = 75;
         
+        // 多条件判断
         if (score >= 90) {
             result = "优秀";
+        } else if (score >= 75) {
+            result = "良好";
         } else if (score >= 60) {
             result = "及格";
         } else {
-            result = "不及格";
+            result = "需努力";
         }
         
-        assertEquals("及格", result);
+        assertEquals("良好", result);
+    }
+
+    @Test
+    void testSwitchAdvanced() {
+        String day = "MONDAY";
+        int workHours = 0;
+        
+        switch (day) {
+            case "MONDAY":
+            case "TUESDAY":
+            case "WEDNESDAY":
+                workHours = 8;
+                break;
+            case "THURSDAY":
+                workHours = 6; // 周四半天
+                break;
+            case "FRIDAY":
+                workHours = 4; // 周五弹性
+                break;
+            default:
+                workHours = 0; // 周末休息
+        }
+        
+        assertTrue(workHours > 4);
     }
 }
 ```
+
+**枚举类型匹配**
+```java
+enum UserRole { ADMIN, EDITOR, GUEST }
+
+class RoleCheckTest {
+    
+    @Test
+    void testEnumSwitch() {
+        UserRole role = UserRole.ADMIN;
+        String permissions = "";
+        
+        switch (role) {
+            case ADMIN:
+                permissions = "所有权限";
+                break;
+            case EDITOR:
+                permissions = "编辑权限";
+                break;
+            case GUEST:
+                permissions = "只读权限";
+                break;
+        }
+        
+        assertEquals("所有权限", permissions);
+    }
+}
+```
+
+> [!tip]最佳实践
+> 1. 总是添加`default`分支处理未预见值
+> 2. 使用`break`避免case穿透
+> 3. 优先使用枚举替代字符串匹配
+> 4. 复杂逻辑建议改用多态实现
 
 ### 循环结构
 
+- **while 循环**
 ```java
-class LoopTest {
-    
-    @Test
-    void testForLoop() {
-        List<Integer> output = new ArrayList<>();
-        
-        for (int i = 0; i < 5; i++) {
-            output.add(i);
-        }
-        
-        assertEquals(List.of(0, 1, 2, 3, 4), output);
-    }
-    
-    @Test
-    void testWhileLoop() {
-        List<Integer> output = new ArrayList<>();
-        int j = 0;
-        
-        while (j < 3) {
-            output.add(j++);
-        }
-        
-        assertEquals(List.of(0, 1, 2), output);
-    }
+while (布尔表达式) {
+    // 循环体
 }
 ```
+- **do-while 循环**
+```java
+do {
+    // 循环体
+} while (布尔表达式);
+```
+- **for 循环**
+```java
+// 基本语法
+for (初始化; 布尔表达式; 更新) {
+    // 循环体
+}
+
+// 示例：打印1到5
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+
+// 增强 for 循环
+for (元素类型 变量名 : 数组或集合(即 Iterable 的实例)) {
+    // 循环体
+} 
+
+// 示例：遍历数组
+int[] numbers = {1, 2, 3, 4, 5};
+for (int num : numbers) {
+    System.out.println(num);
+}
+```
+
+### 控制跳转语句
+
+- **break**：终止当前循环或 switch 语句
+- **continue**：跳过当前循环，继续下一次循环
+- **return**：结束当前方法，返回值（可选）
