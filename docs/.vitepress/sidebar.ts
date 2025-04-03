@@ -17,6 +17,7 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
       text: 'Java 基础',
       items: [
         { text: '基础语法', link: 'basic' },
+        { text: '面向对象', link: 'oop' },
       ],
     },
     // {
