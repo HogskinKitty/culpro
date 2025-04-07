@@ -65,43 +65,43 @@ import { NAV_DATA } from './index-nav-data'
   <div class="tools-container">
     <div class="tool-item">
       <a href="https://vitepress.dev/" target="_blank" class="tool-link">
-        <img src="https://vitepress.dev/vitepress-logo-large.webp" alt="VitePress" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/vitepress-logo.webp" alt="VitePress" class="tool-icon">
         <div>VitePress</div>
       </a>
     </div>
     <div class="tool-item">
       <a href="https://cn.vuejs.org/" target="_blank" class="tool-link">
-        <img src="https://cn.vuejs.org/logo.svg" alt="Vue" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/vue-logo.svg" alt="Vue" class="tool-icon">
         <div>Vue.js</div>
       </a>
     </div>
     <div class="tool-item">
       <a href="https://github.com/" target="_blank" class="tool-link">
-        <img src="https://cdn.culpro.cn/images/github-v1.png" alt="GitHub" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/github.png" alt="GitHub" class="tool-icon">
         <div>GitHub</div>
       </a>
     </div>
     <div class="tool-item">
       <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="tool-link">
-        <img src="https://cdn.culpro.cn/images/upyun_logo1.png" alt="bugstack" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/upyun_logo1.png" alt="upyun" class="tool-icon">
         <div>又拍云</div>
       </a>
     </div>
     <div class="tool-item">
       <a href="https://bugstack.cn/" target="_blank" class="tool-link">
-        <img src="https://cdn.culpro.cn/images/xiaofuge-blog-logo.png" alt="bugstack" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/xiaofuge-blog-logo.png" alt="bugstack" class="tool-icon">
         <div>小傅哥 bugstack 虫洞栈</div>
       </a>
     </div>
     <div class="tool-item">
       <a href="https://fe-mm.com/" target="_blank" class="tool-link">
-        <img src="https://cdn.culpro.cn/images/maomao-logo.png" alt="bugstack" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/maomao-logo.png" alt="maomao" class="tool-icon">
         <div>茂神</div>
       </a>
     </div>
     <div class="tool-item">
       <a href="https://vitepress.yiov.top/" target="_blank" class="tool-link">
-        <img src="https://vitepress.dev/vitepress-logo-large.webp" alt="bugstack" class="tool-icon">
+        <img src="https://assets.culpro.cn/images/vitepress-logo.webp" alt="VitePress 中文教程" class="tool-icon">
         <div>VitePress 中文教程</div>
       </a>
     </div>
@@ -111,7 +111,7 @@ import { NAV_DATA } from './index-nav-data'
     <span>
       <span class="upyun-text-before">本网站由</span>
       <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="upyun-link">
-        <img src="https://cdn.culpro.cn/images/upyun_logo2.png" alt="upyun" class="upyun-logo">
+        <img src="https://assets.culpro.cn/images/upyun_logo2.png" alt="upyun" class="upyun-logo">
       </a>
       <span class="upyun-text-after">提供CDN加速/云存储服务</span>
     </span>
