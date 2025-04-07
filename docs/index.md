@@ -6,7 +6,7 @@ hero:
   text: "耕耘更好的程序"
   tagline: Cultivate Better Programs and Better Oneself.
   image:
-    src: https://cdn.culpro.cn/images/logo.png
+    src: /logo.png
     alt: CULPRO
   actions:
     - theme: brand

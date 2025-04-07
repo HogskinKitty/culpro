@@ -23,7 +23,7 @@ export default defineConfig({
 
   // 头部
   head: [
-    ['link', { rel: 'icon', href: 'https://cdn.culpro.cn/images/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
   // 最后更新时间
@@ -87,7 +87,7 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // logo
-    logo: 'https://cdn.culpro.cn/images/logo.png',
+    logo: '/logo.png',
 
     // 导航栏
     nav,
