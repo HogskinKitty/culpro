@@ -16,8 +16,8 @@ import 'virtual:group-icons.css'
 const MODEL_CONFIGS = {
   // 模型路径配置，索引对应主题状态
   PATHS: [
-    'https://model.oml2d.com/cat-black/model.json',   // 索引 0：暗色模型
-    'https://model.oml2d.com/cat-white/model.json'   // 索引 1：亮色模型
+    'https://model.culpro.cn/cat-black/model.json',   // 索引 0：暗色模型
+    'https://model.culpro.cn/cat-white/model.json'   // 索引 1：亮色模型
   ],
   // 模型基础配置
   DEFAULT_SCALE: 0.15,
