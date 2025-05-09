@@ -8,8 +8,8 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: '编程语言',
         items: [
-          { text: 'Java', link: '/java/basic' },
-          { text: 'Python', link: '/python/basic' }
+          { text: 'Java', link: '/java/' },
+          { text: 'Python', link: '/python/' }
         ]
       },
       {

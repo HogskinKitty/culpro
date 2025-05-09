@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始耕耘
-      link: /java/basic
+      link: /java/
     - theme: alt
       text: 搭建初衷
       link: /about

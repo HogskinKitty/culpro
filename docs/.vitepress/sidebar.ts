@@ -16,8 +16,25 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
     {
       text: 'Java 基础',
       items: [
-        { text: '基础语法', link: 'basic' },
-        { text: '面向对象', link: 'oop' },
+        { text: '基础语法', link: 'java-basics' },
+        { text: '面向对象', link: 'java-oop' },
+      ],
+    },
+    {
+      text: '集合框架',
+      items: [
+        { text: '什么是集合框架', link: 'collection' },
+        { text: 'ArrayList 源码分析', link: 'arraylist' },
+        { text: 'LinkedList 源码分析', link: 'linkedlist' },
+        { text: 'HashMap 源码分析', link: 'hashmap' },
+        { text: 'ConcurrentHashMap 源码分析', link: 'concurrent-hashmap' },
+      ],
+    },
+    {
+      text: '并发编程',
+      items: [
+        { text: '线程与进程基础', link: 'thread-basics' },
+        { text: '线程与进程安全', link: 'thread-safety' },
       ],
     },
     // {
