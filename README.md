@@ -204,5 +204,5 @@ CULPRO 技术文档中心是一个全面的技术知识库，旨在为开发者�
 
 ## 许可证
 
-本文档采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可证。
+本项目采用 [Apache License 2.0](LICENSE) 许可证。
 
