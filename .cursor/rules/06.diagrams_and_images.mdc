@@ -1,0 +1,340 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 文档图表与图片管理规范
+
+## 图表创建与管理
+
+本规范定义了项目中所有文档图表和图片的创建、存储和使用标准，确保图表风格统一、管理规范。
+
+## 图表工具选择
+
+### 首选工具
+
+1. **draw.io（diagrams.net）**：用于创建各类图表
+   - 系统架构图
+   - 流程图
+   - 时序图
+   - UML 类图
+   - ER 图
+   - 网络拓扑图
+
+2. **D2**：适用于代码式图表创建
+   - 复杂架构图
+   - 组件关系图
+   - 需要版本控制的图表
+
+### 辅助工具
+
+- **Mermaid**：适用于简单流程图和时序图，直接嵌入 Markdown
+- **PlantUML**：适用于标准化的 UML 图表
+
+## 文件组织结构
+
+### 源文件存储
+
+```
+culpro/
+├── draw/                    # 图表源文件目录
+│   ├── java/                # Java 相关图表
+│   ├── middleware/          # 中间件相关图表
+│   └── architecture/        # 架构设计图表
+├── docs/                    # 文档目录
+│   ├── public/              # 静态资源目录
+│   │   └── images/          # 图片资源目录
+```
+
+### 文件命名规范
+
+#### 源文件命名
+
+- 使用小写字母和连字符
+- 文件名格式：`{分类}-{主题}-{图表类型}.drawio`
+- 示例：`java-threadlocal-memory-model.drawio`、`redis-cluster-architecture.drawio`
+
+#### 导出图片命名
+
+- 与源文件保持一致，仅更改扩展名
+- 格式：`{分类}-{主题}-{图表类型}.svg`
+- 示例：`java-threadlocal-memory-model.svg`、`redis-cluster-architecture.svg`
+
+## 图表创建流程
+
+### 新建图表
+
+1. **确定图表需求**：明确图表类型、目标受众和复杂度
+2. **选择合适的工具**：基于需求选择 draw.io 或其他工具
+3. **在对应目录创建源文件**：
+   ```bash
+   mkdir -p draw/java  # 创建目录（如不存在）
+   touch draw/java/java-threadlocal-memory-model.drawio  # 创建源文件
+   ```
+4. **使用 draw.io 打开并编辑**：
+   ```bash
+   drawio draw/java/java-threadlocal-memory-model.drawio
+   ```
+
+### 图表样式规范
+
+1. **配色方案**：
+   - 主色调：#546ec5（蓝色）
+   - 辅助色：#f5a742（橙色）、#4caf50（绿色）、#e91e63（红色）
+   - 背景色：使用透明背景，以适应不同主题
+
+2. **字体**：
+   - 主要文字：Arial 或 Helvetica，12-14pt
+   - 标题文字：Arial 或 Helvetica，粗体，14-16pt
+   - 注释文字：Arial 或 Helvetica，斜体，10-12pt
+
+3. **线条**：
+   - 主要线条：1.5-2pt，实线
+   - 次要线条：1pt，虚线
+   - 箭头：适当大小，清晰可见
+
+4. **形状**：
+   - 统一的圆角矩形（圆角半径：5px）
+   - 关键节点使用醒目颜色
+   - 保持形状大小协调
+
+5. **明暗主题自适应**：
+   - **单一SVG适应双主题**：创建一个可以在明暗主题下自动适应的SVG图片
+   - **配色原则**：
+     - 避免极端颜色（纯黑、纯白）
+     - 使用中等饱和度和亮度的颜色
+     - 确保所有元素在不同背景下都有足够对比度（至少4.5:1）
+     - 颜色选择考虑两种主题下的可见度
+   
+   - **SVG文件处理**：
+     - 使用CSS变量定义颜色，而非硬编码颜色值
+     - 为SVG元素添加适当的类名，便于主题样式控制
+     - 文本颜色使用`currentColor`，自动继承父元素颜色
+   
+   - **核心实现方式**：
+     ```xml
+     <!-- SVG文件添加以下CSS样式 -->
+     <style>
+       @media (prefers-color-scheme: dark) {
+         .svg-text { fill: #e0e0e0; }
+         .svg-line { stroke: #aaaaaa; }
+         .svg-fill-primary { fill: #546ec5; }
+         .svg-fill-secondary { fill: #f5a742; }
+       }
+       @media (prefers-color-scheme: light) {
+         .svg-text { fill: #333333; }
+         .svg-line { stroke: #666666; }
+         .svg-fill-primary { fill: #546ec5; }
+         .svg-fill-secondary { fill: #f5a742; }
+       }
+     </style>
+     ```
+   
+   - **VitePress整合**：
+     ```css
+     /* 在网站CSS中添加 */
+     .vp-doc svg .svg-text {
+       fill: var(--vp-c-text-1);
+     }
+     .vp-doc svg .svg-line {
+       stroke: var(--vp-c-text-2);
+     }
+     .vp-doc svg .svg-fill-primary {
+       fill: var(--vp-c-brand);
+     }
+     ```
+   
+   - **图形元素适配**：
+     - 形状填充色：使用中等明度的颜色，避免过深或过浅
+     - 边框：使用较深颜色，保证在浅色背景下可见
+     - 背景图层：使用半透明背景，适应明暗切换
+     - 重要节点：使用品牌主色，在两种主题下都醒目
+   
+   - **文字适配**：
+     - 使用 CSS 变量控制文字颜色
+     - 重要文字可添加细微描边，增强可读性
+     - 深色背景上的浅色文字需要足够的大小和粗细
+
+6. **主题适配测试**：
+   - 在浏览器中测试SVG在明暗两种主题下的表现
+   - 使用开发者工具切换明暗模式
+   - 检查所有文字、线条和图形元素是否清晰可见
+   - 验证重要信息在两种模式下都能被正确理解
+
+### 导出与优化
+
+1. **SVG导出**：
+   ```bash
+   draw.io --export --format svg --output docs/public/images/java-threadlocal-memory-model.svg draw/java/java-threadlocal-memory-model.drawio
+   ```
+
+2. **SVG后处理**：
+   ```bash
+   # 优化SVG文件大小
+   svgo --multipass docs/public/images/java-threadlocal-memory-model.svg
+   
+   # 添加主题适应CSS
+   cat <<EOT >> docs/public/images/java-threadlocal-memory-model.svg
+   <style>
+     @media (prefers-color-scheme: dark) {
+       .svg-text { fill: #e0e0e0; }
+       .svg-line { stroke: #aaaaaa; }
+     }
+     @media (prefers-color-scheme: light) {
+       .svg-text { fill: #333333; }
+       .svg-line { stroke: #666666; }
+     }
+   </style>
+   EOT
+   ```
+
+3. **类名添加**：
+   - 使用文本编辑器或脚本工具为SVG中的元素添加适当的类名
+   - 对文本元素添加 `class="svg-text"`
+   - 对线条元素添加 `class="svg-line"`
+   - 对填充区域添加 `class="svg-fill-primary"` 或 `class="svg-fill-secondary"`
+
+## 在文档中使用图片
+
+### Markdown 图片引用
+
+```markdown
+![ThreadLocal内存模型](mdc:images/java-threadlocal-memory-model.svg)
+```
+
+### SVG内联嵌入
+
+对于需要精确控制的重要图表，可以直接内联SVG：
+
+```html
+<figure>
+  <svg class="theme-adaptive-diagram" viewBox="0 0 800 600">
+    <!-- SVG内容 -->
+    <style>
+      .theme-adaptive-diagram .svg-text {
+        fill: var(--vp-c-text-1);
+      }
+      .theme-adaptive-diagram .svg-line {
+        stroke: var(--vp-c-divider);
+      }
+    </style>
+  </svg>
+  <figcaption>图1: ThreadLocal内存模型图</figcaption>
+</figure>
+```
+
+### 图片路径规范
+
+1. **生产环境**：使用 CDN 路径
+   ```
+   https://assets.culpro.cn/images/{图片名}.svg
+   ```
+
+2. **本地开发**：使用相对路径
+   ```
+   /images/{图片名}.svg
+   ```
+
+### 图片描述规范
+
+1. **添加 alt 属性**：简洁描述图片内容，有助于可访问性
+2. **图片说明**：在图片下方添加简要说明文字
+3. **引用标记**：为重要图片添加编号，便于在文本中引用
+
+示例：
+```markdown
+![ThreadLocal内存模型](mdc:images/java-threadlocal-memory-model.svg)
+*图 1：ThreadLocal 的内存结构示意图，展示了线程、ThreadLocalMap 和存储值之间的关系*
+```
+
+## 图表更新流程
+
+### 修改现有图表
+
+1. **找到源文件**：在 `draw` 目录下找到对应的 .drawio 文件
+2. **编辑图表**：
+   ```bash
+   draw.io draw/java/java-threadlocal-memory-model.drawio
+   ```
+3. **重新导出并处理**：
+   ```bash
+   draw.io --export --format svg --output docs/public/images/java-threadlocal-memory-model.svg draw/java/java-threadlocal-memory-model.drawio
+   
+   # 添加主题适应CSS（如果原SVG被完全覆盖）
+   cat <<EOT >> docs/public/images/java-threadlocal-memory-model.svg
+   <style>
+     @media (prefers-color-scheme: dark) {
+       .svg-text { fill: #e0e0e0; }
+       .svg-line { stroke: #aaaaaa; }
+     }
+   </style>
+   EOT
+   ```
+4. **更新文档引用**：如有必要，更新文档中的图片描述
+
+### 版本控制
+
+1. **源文件纳入版本控制**：.drawio 文件必须提交到代码仓库
+2. **图片可选择性提交**：可提交生成的 SVG 文件，也可在构建时自动生成
+3. **变更记录**：图表有重大更新时，在文档中注明更新日期和内容
+
+## 图表审核与质量控制
+
+### 提交前检查清单
+
+- [ ] 图表内容准确、完整
+- [ ] 遵循设计规范（颜色、字体、线条等）
+- [ ] 源文件已保存在正确位置
+- [ ] 图片已导出为 SVG 格式并添加主题适应样式
+- [ ] SVG元素已添加适当的类名
+- [ ] 文档中引用路径正确
+- [ ] alt 属性和图片说明已添加
+- [ ] 图表在明暗两种主题下都有良好显示效果
+- [ ] 文字在不同背景下都清晰可辨
+- [ ] 线条和形状在不同主题下都能清晰识别
+
+### 常见问题解决
+
+1. **图片不显示**：
+   - 检查文件路径是否正确
+   - 确认图片文件是否存在于指定位置
+   - 验证图片格式是否支持
+
+2. **图表样式不一致**：
+   - 参考规范重新设计
+   - 使用模板确保风格统一
+
+3. **主题适配问题**：
+   - SVG不响应主题切换：检查CSS变量和媒体查询是否正确
+   - 文字在某一主题下不可见：调整文字颜色或添加描边
+   - 线条消失：增加线条宽度或调整颜色
+   - 形状填充色过深/过浅：使用中等亮度的颜色
+
+4. **SVG尺寸问题**：
+   - 使用`viewBox`属性确保SVG正确缩放
+   - 避免使用固定宽高，使用相对尺寸
+   - 设置`preserveAspectRatio="xMidYMid meet"`保持图表比例
+
+## 最佳实践
+
+1. **图表简洁**：避免过度复杂的图表，一个图表专注表达一个核心概念
+2. **保持一致性**：同一文档中的多个图表保持风格一致
+3. **适当抽象**：根据读者背景选择合适的抽象级别
+4. **引用说明**：在正文中引用并解释图表内容
+5. **定期更新**：随着技术或架构变化更新图表
+6. **主题测试**：在提交前在明暗两种主题环境下测试图表效果
+7. **使用CSS变量**：避免硬编码颜色，使用CSS变量实现主题适应
+8. **元素分组与命名**：在draw.io中合理使用图层和分组，为元素添加有意义的ID和类名
+9. **SVG优化**：使用SVGO工具优化SVG文件大小，移除不必要的元数据
+10. **可访问性考虑**：添加适当的`aria-*`属性，确保图表内容可被辅助技术识别
+
+## 参考资料
+
+- [draw.io/diagrams.net 官方文档](mdc:https:/www.diagrams.net/doc)
+- [SVG规范](mdc:https:/www.w3.org/TR/SVG2)
+- [技术文档图表设计最佳实践](mdc:https:/www.infoq.com/articles/crafting-effective-technical-diagrams)
+- [Web内容无障碍指南 WCAG 2.1](mdc:https:/www.w3.org/TR/WCAG21)
+- [暗色模式设计指南](mdc:https:/material.io/design/color/dark-theme.html)
+- [使用CSS设计夜间模式](mdc:https:/css-tricks.com/dark-modes-with-css)
+- [SVG与CSS变量指南](mdc:https:/css-tricks.com/svg-properties-and-css-variables)
+- [响应式SVG最佳实践](mdc:https:/www.smashingmagazine.com/2014/03/rethinking-responsive-svg)
