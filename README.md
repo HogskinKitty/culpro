@@ -199,7 +199,7 @@ CULPRO 技术文档中心是一个全面的技术知识库，旨在为开发者�
 
 ## 联系方式
 
-- 邮箱：support@culpro.com
+- 邮箱：zymdev@126.com
 - 问题反馈：[GitHub Issues](https://github.com/HogskinKitty/culpro/issues)
 
 ## 许可证
