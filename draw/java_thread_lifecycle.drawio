@@ -1,0 +1,191 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram id="C5R1j_d1sZ6bN2mK0oP4" name="Page-1">
+    <mxGraphModel dx="1420" dy="2062" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-26" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;fontSize=12;flowAnimation=1;fillColor=#fff5e6;strokeColor=#bf6f3f;strokeWidth=2;" parent="1" source="MH4kUnOyoTzqZymSGQnd-4" target="state_timed_waiting" edge="1">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="240" />
+            </Array>
+            <mxPoint x="-10" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-1" value="&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;Thread.sleep(long)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;Object.wait(long)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;Thread.join(long)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;LockSupport.parkNanos()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;LockSupport.parkUntil()&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" parent="MH4kUnOyoTzqZymSGQnd-26" vertex="1" connectable="0">
+          <mxGeometry x="-0.1584" y="-20" relative="1" as="geometry">
+            <mxPoint x="-58" y="-43" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-29" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;fontSize=13;flowAnimation=1;fillColor=#fff5e6;strokeColor=#bf6f3f;strokeWidth=2;" parent="1" source="MH4kUnOyoTzqZymSGQnd-4" target="state_waiting" edge="1">
+          <mxGeometry x="-0.0016" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-4" value="&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;Object.wait()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;Thread.join()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #994c00;&quot;&gt;LockSupport.park()&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" parent="MH4kUnOyoTzqZymSGQnd-29" vertex="1" connectable="0">
+          <mxGeometry x="0.1416" y="18" relative="1" as="geometry">
+            <mxPoint x="-58" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;curved=0;flowAnimation=1;fillColor=#f5ebf5;strokeColor=#7a4b85;strokeWidth=2;" parent="1" source="MH4kUnOyoTzqZymSGQnd-4" target="state_blocked" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-8" value="&lt;span style=&quot;font-weight: bold; color: #7a4b85;&quot;&gt;等待进入 synchronized 方法&lt;br&gt;等待进入 synchronized 块&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" parent="1Cu20XynjvV-d4irG11N-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.0229" relative="1" as="geometry">
+            <mxPoint x="-73" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-4" value="运行&#xa;(RUNNABLE)" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=#e8f2e8;strokeColor=#3d7d3d;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="320" y="180" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="initial_state" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e6f0ff;strokeColor=#004c99;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="450" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trans_initial_new" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;flowAnimation=1;fillColor=#e6f0ff;strokeColor=#004c99;strokeWidth=2;fontStyle=1;fontColor=#004c99;" parent="1" source="initial_state" target="state_new" edge="1">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="30" />
+              <mxPoint x="460" y="30" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5myeSxd9RxO7uCoTxaRo-2" value="&lt;span style=&quot;color: rgb(0, 76, 153); font-size: 12px; font-weight: 700;&quot;&gt;实例化&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="trans_initial_new">
+          <mxGeometry x="-0.34" y="-1" relative="1" as="geometry">
+            <mxPoint x="29" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state_new" value="初始化&#xa;(NEW)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=0;flowAnimation=1;fillColor=#fff8e6;strokeColor=#b3a569;strokeWidth=2;" parent="1" source="state_runnable" target="state_running" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="250" />
+              <mxPoint x="550" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-11" value="&lt;span style=&quot;font-weight: bold; color: #8c7000;&quot;&gt;yield()&lt;br&gt;系统调度&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=#e8f2e8;" parent="MH4kUnOyoTzqZymSGQnd-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.0125" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state_runnable" value="运行中&#xa;(RUNNING)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c9e8c9;strokeColor=#3d7d3d;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;fontSize=12;strokeColor=#3d7d3d;flowAnimation=1;labelBackgroundColor=#b0e3e6;fillColor=#e8f2e8;strokeWidth=2;" parent="1" source="state_running" target="state_runnable" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="350" />
+              <mxPoint x="370" y="250" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-10" value="&lt;span style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;系统调度&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#e8f2e8;fontSize=12;" parent="MH4kUnOyoTzqZymSGQnd-10" vertex="1" connectable="0">
+          <mxGeometry x="0.05" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state_running" value="就绪&#xa;(READY)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;curved=0;flowAnimation=1;fillColor=#e8f2e8;strokeColor=#3d7d3d;strokeWidth=2;" parent="1" source="state_blocked" target="MH4kUnOyoTzqZymSGQnd-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-9" value="&lt;span style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;获取到锁&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" parent="MH4kUnOyoTzqZymSGQnd-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.2437" relative="1" as="geometry">
+            <mxPoint x="-15" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state_blocked" value="阻塞&#xa;(BLOCKED)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-31" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;fontSize=13;flowAnimation=1;fillColor=#e8f2e8;strokeColor=#3d7d3d;strokeWidth=2;" parent="1" source="state_waiting" target="MH4kUnOyoTzqZymSGQnd-4" edge="1">
+          <mxGeometry x="-0.0802" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="350" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-3" value="&lt;span style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;Object.notify()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;Object.notifyAll()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;LockSupport.unpark(Thread)&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontStyle=0;fontSize=12;labelBackgroundColor=none;" parent="MH4kUnOyoTzqZymSGQnd-31" vertex="1" connectable="0">
+          <mxGeometry x="0.139" y="20" relative="1" as="geometry">
+            <mxPoint x="-89" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state_waiting" value="等待&#xa;(WAITING)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MH4kUnOyoTzqZymSGQnd-27" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;align=left;flowAnimation=1;fillColor=#e8f2e8;strokeColor=#3d7d3d;strokeWidth=2;" parent="1" source="state_timed_waiting" target="MH4kUnOyoTzqZymSGQnd-4" edge="1">
+          <mxGeometry x="-0.0896" y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="340" />
+            </Array>
+            <mxPoint x="750" y="300" as="sourcePoint" />
+            <mxPoint x="10" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Cu20XynjvV-d4irG11N-2" value="&lt;div style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;Object.notify()&lt;/div&gt;&lt;div style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;Object.notifyAll()&lt;/div&gt;&lt;div style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;LockSupport.unpark(Thread)&lt;/div&gt;&lt;div style=&quot;font-weight: bold; color: #3d7d3d;&quot;&gt;超时时间到&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" parent="MH4kUnOyoTzqZymSGQnd-27" vertex="1" connectable="0">
+          <mxGeometry x="0.1129" y="-18" relative="1" as="geometry">
+            <mxPoint x="-62" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state_timed_waiting" value="超时等待&#xa;(TIMED_WAITING)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state_terminated" value="终止&#xa;(TERMINATED)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="trans_new_runnable" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;flowAnimation=1;fillColor=#e8f2e8;strokeColor=#3d7d3d;strokeWidth=2;fontStyle=1;fontColor=#3d7d3d;labelBackgroundColor=none;" parent="1" source="state_new" target="MH4kUnOyoTzqZymSGQnd-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="460" y="150" />
+              <mxPoint x="460" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5myeSxd9RxO7uCoTxaRo-1" value="&lt;span style=&quot;color: rgb(61, 125, 61); font-size: 12px; font-weight: 700;&quot;&gt;Thread.start()&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="trans_new_runnable">
+          <mxGeometry x="-0.18" y="1" relative="1" as="geometry">
+            <mxPoint x="48" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="trans_running_terminated" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;flowAnimation=1;fillColor=#f8e8e8;strokeColor=#b85450;strokeWidth=2;fontStyle=1;fontColor=#b85450;" parent="1" source="MH4kUnOyoTzqZymSGQnd-4" target="state_terminated" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="410" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="460" y="410" />
+              <mxPoint x="460" y="410" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5myeSxd9RxO7uCoTxaRo-3" value="&lt;span style=&quot;color: rgb(184, 84, 80); font-size: 12px; font-weight: 700;&quot;&gt;执行完成&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="trans_running_terminated">
+          <mxGeometry x="-0.2167" y="-2" relative="1" as="geometry">
+            <mxPoint x="34" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="final_state" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8e8e8;strokeColor=#b85450;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="450" y="564.5" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trans_terminated_final" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8e8e8;strokeColor=#b85450;strokeWidth=2;flowAnimation=1;" parent="1" source="state_terminated" target="final_state" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="530" />
+              <mxPoint x="460" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
