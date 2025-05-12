@@ -320,9 +320,9 @@ childThread.start();
 
 在使用 CompletableFuture、并行流等异步任务时，ThreadLocal 变量不会自动传递给执行任务的线程。需要手动传递或使用第三方库。
 
-## 内存泄漏概念
+## 内存泄漏
 
-在讨论 ThreadLocal 可能引起的内存泄漏问题前，让我们先理解什么是内存泄漏：
+### 什么是内存泄漏：
 
 内存泄漏（Memory Leak）是指程序在申请内存后，无法释放已申请的内存空间，导致这部分内存无法被再次使用的情况。在 Java 中，内存泄漏具体表现为对象已经不再被程序使用，但由于仍然被某些引用所持有，导致垃圾收集器无法回收它们。
 
@@ -341,10 +341,12 @@ Java 虽然有自动垃圾回收机制，但仍可能发生内存泄漏，主要
 内存泄漏的危害：
 
 - 可用内存减少，导致应用程序性能下降
+
 - 严重时可能引发 OutOfMemoryError 错误，导致应用崩溃
+
 - 对于长时间运行的应用（如服务器应用），即使是微小的内存泄漏也会随着时间累积，最终导致严重问题
 
-## ThreadLocal 的内存泄漏问题
+### ThreadLocal 的内存泄漏问题
 
 ThreadLocal 可能导致内存泄漏，主要原因是：
 
@@ -359,8 +361,11 @@ ThreadLocal 可能导致内存泄漏，主要原因是：
 ![ThreadLocal内存泄漏](https://assets.culpro.cn/images/java-threadlocal-memory-leak.svg)
 
 - **场景1**：程序不再使用某 ThreadLocal 变量，该变量变为垃圾
+
 - **场景2**：由于 ThreadLocalMap 中的 Entry 对 key 使用的是弱引用，这些 key 会被垃圾回收
+
 - **场景3**：Entry 中的 value 仍然被 ThreadLocalMap 强引用，但由于 key 为 null，无法再通过常规方式访问到这些 value
+
 - **场景4**：如果线程一直存活（尤其是线程池的核心线程），这些无法访问的 value 会一直占用内存空间
 
 正确的使用方式是在不需要时调用 remove() 方法清除值：
