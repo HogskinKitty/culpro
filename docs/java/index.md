@@ -15,9 +15,3 @@
 
 - [线程基础](./thread-basics.md) - Java 线程模型、线程创建与生命周期
 - [线程安全](./thread-safety.md) - 线程安全问题及解决方案、Java 内存模型
-
-### 集合框架
-
-- [集合框架概述](./collection.md) - Java 集合框架的整体介绍
-- [ArrayList 源码分析](./arraylist.md) - ArrayList 的实现原理与源码分析
-- [HashMap 源码分析](./hashmap.md) - HashMap 的实现原理与源码分析

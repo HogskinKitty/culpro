@@ -23,11 +23,11 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
     {
       text: '集合框架',
       items: [
-        { text: '什么是集合框架', link: 'collection' },
-        { text: 'ArrayList 源码分析', link: 'arraylist' },
-        { text: 'LinkedList 源码分析', link: 'linkedlist' },
-        { text: 'HashMap 源码分析', link: 'hashmap' },
-        { text: 'ConcurrentHashMap 源码分析', link: 'concurrent-hashmap' },
+        // { text: '什么是集合框架', link: 'collection' },
+        // { text: 'ArrayList 源码分析', link: 'arraylist' },
+        // { text: 'LinkedList 源码分析', link: 'linkedlist' },
+        // { text: 'HashMap 源码分析', link: 'hashmap' },
+        // { text: 'ConcurrentHashMap 源码分析', link: 'concurrent-hashmap' },
       ],
     },
     {
@@ -35,21 +35,21 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
       items: [
         { text: '线程与进程', link: 'thread-process' },
         { text: '线程基础', link: 'thread-basics' },
-        { text: '线程安全', link: 'thread-safety' },
+        // { text: '线程安全', link: 'thread-safety' },
       ],
     },
     {
       text: '异常处理',
       items: [
-        { text: '异常处理机制详解', link: 'java-exception-handling' },
+        // { text: '异常处理机制详解', link: 'java-exception-handling' },
       ],
     },
-    // {
-    //   text: 'JVM',
-    //   items: [
-    //     { text: '示例内容', link: 'jvm' },
-    //   ],
-    // },
+    {
+      text: 'JVM',
+      items: [
+        // { text: '示例内容', link: 'jvm' },
+      ],
+    },
   ]
 }
 
