@@ -174,7 +174,7 @@ Java 线程在运行过程中可能处于以下状态：
 | TIMED_WAITING | 线程进入计时等待状态，等待超时或被唤醒                  |
 | TERMINATED    | 线程已执行完成或因异常而终止                       |
 
-![线程生命周期](https://assets.culpro.cn/images/java_thread_lifecycle.svg)
+![线程生命周期](https://assets.culpro.cn/images/java-thread-lifecycle.svg)
 
 ### 线程状态转换方法
 
