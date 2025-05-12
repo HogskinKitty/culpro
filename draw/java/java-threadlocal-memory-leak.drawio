@@ -1,0 +1,148 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram id="3n5k-XV6Mu2RpvXu35rQ" name="ThreadLocal内存泄漏">
+    <mxGraphModel dx="1420" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="" id="theme-styles">
+          <mxCell style="strokeColor=none;fillColor=none;" parent="1" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </object>
+        <object label="&lt;style&gt; /* 主题适配样式 */ @media (prefers-color-scheme: dark) {   .svg-text { fill: #e0e0e0; }   .svg-line { stroke: #aaaaaa; }   .svg-thread { fill: #2b579a; }   .svg-threadlocal { fill: #795c94; }   .svg-map { fill: #b18602; }   .svg-entry { fill: #356635; }   .svg-danger { fill: #a73232; }   .svg-weak { stroke: #999999; stroke-dasharray: 5 3; }   .svg-strong { stroke: #ff4d4d; }   .svg-garbage { fill: #aaaaaa; }   .svg-heap { fill: #e8e8e8; }   .svg-stack { fill: #d4e1f5; } } @media (prefers-color-scheme: light) {   .svg-text { fill: #333333; }   .svg-line { stroke: #666666; }   .svg-thread { fill: #dae8fc; }   .svg-threadlocal { fill: #e1d5e7; }   .svg-map { fill: #fff2cc; }   .svg-entry { fill: #d5e8d4; }   .svg-danger { fill: #f8cecc; }   .svg-weak { stroke: #999999; stroke-dasharray: 5 3; }   .svg-strong { stroke: #b85450; }   .svg-garbage { fill: #cccccc; }   .svg-heap { fill: #f5f5f5; }   .svg-stack { fill: #e6f0ff; } } &lt;/style&gt;" id="css-style-block">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=1;fontColor=#CCCCCC;" parent="1" vertex="1">
+            <mxGeometry x="10" y="10" width="10" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="21" value="&lt;b&gt;ThreadLocal 内存泄漏原理图解&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;class=svg-text;fontSize=18;fontColor=#fb7474;" parent="1" vertex="1">
+          <mxGeometry x="180" y="50" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="Java 堆内存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14;dashed=1;class=svg-heap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="350" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="线程栈" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=14;dashed=1;class=svg-stack;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="350" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="&lt;b&gt;Thread 对象&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontSize=14;class=svg-thread;" parent="1" vertex="1">
+          <mxGeometry x="100" y="150" width="290" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="线程基本信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="120" y="190" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="threadLocals (ThreadLocalMap 引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="120" y="240" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="ThreadLocalMap 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=14;class=svg-map;" parent="1" vertex="1">
+          <mxGeometry x="100" y="350" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Entry 1&lt;br&gt;key=ThreadLocal_A (弱引用)&lt;br&gt;value=数据1 (强引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="1" vertex="1">
+          <mxGeometry x="110" y="390" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Entry 3&lt;br&gt;key=ThreadLocal_C (弱引用)&lt;br&gt;value=数据3 (强引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="1" vertex="1">
+          <mxGeometry x="110" y="460" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Entry 2 (已泄漏)&lt;br&gt;key=null (ThreadLocal已被GC)&lt;br&gt;value=数据2 (强引用仍存在)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;class=svg-danger;" parent="1" vertex="1">
+          <mxGeometry x="250" y="390" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Entry 4 (已泄漏)&lt;br&gt;key=null (ThreadLocal已被GC)&lt;br&gt;value=数据4 (强引用仍存在)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;class=svg-danger;" parent="1" vertex="1">
+          <mxGeometry x="250" y="460" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="ThreadLocal_A 对象&lt;br&gt;(活跃)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;class=svg-threadlocal;" parent="1" vertex="1">
+          <mxGeometry x="480" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="ThreadLocal_C 对象&lt;br&gt;(活跃)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;class=svg-threadlocal;" parent="1" vertex="1">
+          <mxGeometry x="480" y="230" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="ThreadLocal_B 对象&lt;br&gt;(已被GC回收)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;dashed=1;class=svg-garbage;" parent="1" vertex="1">
+          <mxGeometry x="650" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="ThreadLocal_D 对象&lt;br&gt;(已被GC回收)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cccccc;strokeColor=#666666;dashed=1;class=svg-garbage;" parent="1" vertex="1">
+          <mxGeometry x="650" y="230" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="数据1 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" vertex="1" parent="1">
+          <mxGeometry x="480" y="340" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="数据2 对象 (泄漏)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;class=svg-danger;" vertex="1" parent="1">
+          <mxGeometry x="650" y="340" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="数据3 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" vertex="1" parent="1">
+          <mxGeometry x="480" y="430" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="数据4 对象 (泄漏)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;class=svg-danger;" vertex="1" parent="1">
+          <mxGeometry x="650" y="430" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;exitX=0.5;exitY=1;exitDx=0;exitDy=0;class=svg-line;" parent="1" source="4" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="320" />
+              <mxPoint x="245" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.208;exitY=-0.017;exitDx=0;exitDy=0;dashed=1;strokeColor=#999999;class=svg-weak;exitPerimeter=0;" parent="1" source="7" target="11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="137" y="330" />
+              <mxPoint x="410" y="330" />
+              <mxPoint x="410" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.25;exitY=1;exitDx=0;exitDy=0;dashed=1;strokeColor=#999999;class=svg-weak;" parent="1" source="9" target="13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="143" y="570" />
+              <mxPoint x="440" y="570" />
+              <mxPoint x="440" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;exitX=0.5;exitY=0;exitDx=0;exitDy=0;class=svg-strong;" edge="1" parent="1" source="7" target="41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="310" />
+              <mxPoint x="550" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;exitX=0.5;exitY=1;exitDx=0;exitDy=0;class=svg-strong;" edge="1" parent="1" source="9" target="43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="540" />
+              <mxPoint x="550" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;class=svg-strong;" edge="1" parent="1" source="8" target="42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;class=svg-strong;" edge="1" parent="1" source="10" target="44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="弱引用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="380" y="277" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="强引用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="460" y="296" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="长期存活的线程（如线程池中的线程）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="140" y="120" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="内存泄漏原因：ThreadLocal 被 GC 回收后，ThreadLocalMap 中对应 Entry 的 key 变为 null，但 value 仍然被强引用，无法被 GC 回收" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;class=svg-danger;" parent="1" vertex="1">
+          <mxGeometry x="70" y="580" width="460" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="解决方案: 使用完 ThreadLocal 后必须调用remove() 方法" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="1" vertex="1">
+          <mxGeometry x="550" y="580" width="260" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

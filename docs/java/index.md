@@ -15,3 +15,4 @@
 
 - [线程基础](./thread-basics.md) - Java 线程模型、线程创建与生命周期
 - [线程安全](./thread-safety.md) - 线程安全问题及解决方案、Java 内存模型
+- [ThreadLocal 详解](./threadlocal.md) - ThreadLocal 原理、使用场景及最佳实践

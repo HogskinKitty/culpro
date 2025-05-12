@@ -1,0 +1,159 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram id="9qVXnC2yQZn27Cr97CAj" name="ThreadLocal内存模型">
+    <mxGraphModel dx="1420" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="" id="theme-styles">
+          <mxCell style="strokeColor=none;fillColor=none;" parent="1" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </object>
+        <object label="&lt;style&gt; /* 主题适配样式 */ @media (prefers-color-scheme: dark) {   .svg-text { fill: #e0e0e0; }   .svg-line { stroke: #aaaaaa; }   .svg-thread { fill: #2b579a; }   .svg-threadlocal { fill: #795c94; }   .svg-map { fill: #b18602; }   .svg-entry { fill: #356635; }   .svg-weak { stroke: #999999; stroke-dasharray: 5 3; }   .svg-strong { stroke: #b85450; }   .svg-heap { fill: #3a3a3a; }   .svg-stack { fill: #2a4069; } } @media (prefers-color-scheme: light) {   .svg-text { fill: #333333; }   .svg-line { stroke: #666666; }   .svg-thread { fill: #dae8fc; }   .svg-threadlocal { fill: #e1d5e7; }   .svg-map { fill: #fff2cc; }   .svg-entry { fill: #d5e8d4; }   .svg-weak { stroke: #999999; stroke-dasharray: 5 3; }   .svg-strong { stroke: #b85450; }   .svg-heap { fill: #f5f5f5; }   .svg-stack { fill: #e6f0ff; } } &lt;/style&gt;" id="css-style-block">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=1;fontColor=#CCCCCC;" parent="1" vertex="1">
+            <mxGeometry x="10" y="10" width="10" height="10" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="37" value="&lt;b&gt;ThreadLocal 内存模型图解&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;class=svg-text;fontSize=18;fontColor=#546ec5;" parent="1" vertex="1">
+          <mxGeometry x="220" y="30" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="JVM 堆内存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14;dashed=1;class=svg-heap;" parent="1" vertex="1">
+          <mxGeometry x="640" y="120" width="190" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="线程 1 (栈)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=14;dashed=1;class=svg-stack;" parent="1" vertex="1">
+          <mxGeometry x="40" y="120" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="线程 2 (栈)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=14;dashed=1;class=svg-stack;" parent="1" vertex="1">
+          <mxGeometry x="40" y="370" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="&lt;b&gt;Thread 1 对象&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontSize=14;class=svg-thread;" parent="1" vertex="1">
+          <mxGeometry x="70" y="150" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="线程基本信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;class=svg-text;" parent="2" vertex="1">
+          <mxGeometry x="20" y="40" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="threadLocals (ThreadLocalMap 引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;class=svg-text;" parent="2" vertex="1">
+          <mxGeometry x="20" y="80" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;b&gt;Thread 2 对象&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontSize=14;class=svg-thread;" parent="1" vertex="1">
+          <mxGeometry x="70" y="400" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="线程基本信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;class=svg-text;" parent="7" vertex="1">
+          <mxGeometry x="20" y="40" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="threadLocals (ThreadLocalMap 引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;class=svg-text;" parent="7" vertex="1">
+          <mxGeometry x="20" y="80" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="ThreadLocalMap (Thread 1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=14;class=svg-map;" parent="1" vertex="1">
+          <mxGeometry x="350" y="120" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Entry 1&lt;br&gt;key=ThreadLocal_A (弱引用)&lt;br&gt;value=ValueA_1 (强引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="10" vertex="1">
+          <mxGeometry x="20" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Entry 2&lt;br&gt;key=ThreadLocal_B (弱引用)&lt;br&gt;value=ValueB_1 (强引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="10" vertex="1">
+          <mxGeometry x="20" y="110" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="ThreadLocalMap (Thread 2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=14;class=svg-map;" parent="1" vertex="1">
+          <mxGeometry x="350" y="370" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Entry 1&lt;br&gt;key=ThreadLocal_A (弱引用)&lt;br&gt;value=ValueA_2 (强引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="11" vertex="1">
+          <mxGeometry x="20" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Entry 2&lt;br&gt;key=ThreadLocal_B (弱引用)&lt;br&gt;value=ValueB_2 (强引用)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="11" vertex="1">
+          <mxGeometry x="20" y="110" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="ThreadLocal_A 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;class=svg-threadlocal;" parent="1" vertex="1">
+          <mxGeometry x="665" y="160" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="ThreadLocal_B 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;class=svg-threadlocal;" parent="1" vertex="1">
+          <mxGeometry x="665" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;class=svg-weak;" parent="1" source="15" target="23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="485" y="205" as="sourcePoint" />
+            <mxPoint x="680" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;class=svg-weak;" parent="1" target="23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="440" />
+            </Array>
+            <mxPoint x="590" y="440" as="sourcePoint" />
+            <mxPoint x="680" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;class=svg-weak;" parent="1" source="16" target="24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="260" />
+            </Array>
+            <mxPoint x="530" y="205" as="sourcePoint" />
+            <mxPoint x="660" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;class=svg-weak;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="18" target="24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="510" />
+              <mxPoint x="660" y="510" />
+            </Array>
+            <mxPoint x="510" y="205" as="sourcePoint" />
+            <mxPoint x="735" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="弱引用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="730" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;class=svg-strong;" parent="1" source="4" target="10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="245" />
+              <mxPoint x="320" y="210" />
+            </Array>
+            <mxPoint x="280" y="195" as="sourcePoint" />
+            <mxPoint x="340" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;class=svg-strong;" parent="1" source="9" target="11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="495" />
+              <mxPoint x="320" y="460" />
+            </Array>
+            <mxPoint x="280" y="425" as="sourcePoint" />
+            <mxPoint x="340" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="50" value="&lt;b&gt;相同的ThreadLocal对象在不同线程中拥有不同的值&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="315" y="610" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="强引用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" parent="1" vertex="1">
+          <mxGeometry x="280" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="Thread 1 的值" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;class=svg-thread;" parent="1" vertex="1">
+          <mxGeometry x="125" y="80" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="Thread 2 的值" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;class=svg-thread;" parent="1" vertex="1">
+          <mxGeometry x="125" y="330" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="ThreadLocal对象" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;class=svg-threadlocal;" parent="1" vertex="1">
+          <mxGeometry x="675" y="80" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="线程的ThreadLocalMap" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;class=svg-map;" parent="1" vertex="1">
+          <mxGeometry x="400" y="80" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="&lt;b&gt;每个线程拥有自己的ThreadLocalMap，Entry的key指向同一个ThreadLocal对象&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;class=svg-entry;" parent="1" vertex="1">
+          <mxGeometry x="260" y="560" width="450" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yY20dOkHrJFg8rEmO4nU-50" value="强引用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yY20dOkHrJFg8rEmO4nU-51" value="弱引用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;class=svg-text;" vertex="1" parent="1">
+          <mxGeometry x="645" y="330" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
