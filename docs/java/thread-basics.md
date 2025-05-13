@@ -693,288 +693,6 @@ public class SchedulingExample {
 
 线程调度主要由操作系统完成，JVM 通过本地方法与操作系统交互，实现线程管理。
 
-## 线程安全
-
-线程安全是指在多线程环境下，代码能够正确地处理共享数据，确保程序的正确性不会因为多线程的交替执行而受到破坏。
-
-### 线程安全的定义
-
-一个类或方法是线程安全的，当且仅当它满足以下条件：
-
-- 多个线程同时访问时，其行为是正确的
-
-- 不需要调用方做额外的同步或协调
-
-- 无论操作系统如何调度这些线程，无论这些线程的执行顺序如何交织
-
-### 线程不安全的常见问题
-
-1. **竞态条件（Race Condition）**：多个线程以不可预知的顺序访问和修改共享数据
-
-```java
-// 线程不安全的计数器
-public class UnsafeCounter {
-    private int count = 0;
-    
-    public void increment() {
-        count++; // 非原子操作：读取-修改-写入
-    }
-    
-    public int getCount() {
-        return count;
-    }
-}
-```
-
-2. **可见性问题（Visibility Issues）**：一个线程修改了共享变量，另一个线程无法看到这个修改
-
-```java
-// 可见性问题示例
-public class VisibilityProblem {
-    private boolean flag = false;
-    
-    // 线程 A 执行
-    public void setFlag() {
-        flag = true; // 修改可能对其他线程不可见
-    }
-    
-    // 线程B执行
-    public void doWork() {
-        while (!flag) {
-            // 可能永远循环，因为看不到 flag 的更新
-        }
-    }
-}
-```
-
-3. **指令重排序（Instruction Reordering）**：编译器、处理器可能改变指令执行顺序
-
-```java
-// 可能受指令重排序影响的代码
-class Reordering {
-    private int a = 0;
-    private boolean flag = false;
-    
-    public void writer() {
-        a = 42;        // 1
-        flag = true;   // 2 - 这两行可能被重排序
-    }
-    
-    public void reader() {
-        if (flag) {    // 3
-            // 如果 1 和 2 被重排序，这里可能读到 a = 0
-            System.out.println(a); // 4
-        }
-    }
-}
-```
-
-### 线程安全的实现方法
-
-#### 1. 不可变对象
-
-不可变对象天生是线程安全的，因为其状态不能被修改：
-
-```java
-// 不可变类示例
-public final class ImmutableValue {
-    private final int value;
-    
-    public ImmutableValue(int value) {
-        this.value = value;
-    }
-    
-    public int getValue() {
-        return value;
-    }
-    
-    // 返回新实例而不是修改当前实例
-    public ImmutableValue add(int valueToAdd) {
-        return new ImmutableValue(this.value + valueToAdd);
-    }
-}
-```
-
-#### 2. 互斥同步
-
-### 同步块和同步方法
-
-```java
-// 同步块
-synchronized (lockObject){
-    // 临界区代码
-}
-
-// 同步方法
-public synchronized void syncMethod() {
-    // 方法体（整个方法作为临界区）
-}
-
-// 线程安全的计数器
-public class SafeCounter {
-    private int count = 0;
-    
-    public synchronized void increment() {
-        count++;
-    }
-    
-    public synchronized int getCount() {
-        return count;
-    }
-}
-```
-
-### 锁的分类
-
-#### 1. 内置锁（Intrinsic Lock）
-
-- 使用 synchronized 关键字
-
-- 自动获取和释放
-
-- 可重入，但不能中断
-
-#### 2. 显式锁（Explicit Lock）
-
-- 使用 java.util.concurrent.locks 包中的类
-
-- 手动获取和释放
-
-- 支持更多高级特性，如超时、中断、公平性
-
-```java
-Lock lock = new ReentrantLock();
-try{
-    lock.lock(); // 获取锁
-    // 临界区代码
-}finally{
-    lock.unlock(); // 释放锁
-}
-```
-
-#### 3. 读写锁
-
-适用于读多写少的场景：
-
-```java
-ReadWriteLock rwLock = new ReentrantReadWriteLock();
-Lock readLock = rwLock.readLock();
-Lock writeLock = rwLock.writeLock();
-
-// 读操作
-readLock.lock();
-try {
-    // 多个线程可以同时获取读锁
-    // 读取共享资源
-} finally {
-    readLock.unlock();
-}
-
-// 写操作
-writeLock.lock();
-try {
-    // 写锁是独占的
-    // 修改共享资源
-} finally {
-    writeLock.unlock();
-}
-```
-
-### volatile 变量
-
-`volatile` 关键字保证变量的可见性和有序性，但不保证原子性：
-
-```java
-private volatile boolean flag = false;
-
-// 读取 volatile 变量总是获取最新值
-if(flag){
-    // ...
-}
-
-// 写入 volatile 变量对其他线程立即可见
-flag = true;
-```
-
-### 原子变量
-
-`java.util.concurrent.atomic` 包提供了原子操作类：
-
-```java
-// 原子整数
-AtomicInteger counter = new AtomicInteger(0);
-counter.incrementAndGet(); // 原子递增
-counter.getAndAdd(5); // 原子加法
-
-// 原子引用
-AtomicReference<User> userRef = new AtomicReference<>(initialUser);
-userRef.compareAndSet(expectedUser, newUser); // CAS 操作
-```
-
-### 线程封闭
-
-线程封闭是实现线程安全的一种方式，它确保对象只能被一个线程访问：
-
-```java
-// ThreadLocal 实现线程封闭
-ThreadLocal<SimpleDateFormat> dateFormatThreadLocal = ThreadLocal.withInitial(() -> 
-    new SimpleDateFormat("yyyy-MM-dd"));
-
-// 每个线程获取自己的 SimpleDateFormat 实例
-String formatDate(Date date) {
-    return dateFormatThreadLocal.get().format(date);
-}
-```
-
-### 线程安全性级别
-
-1. **不可变（Immutable）**：对象创建后状态不能改变
-
-2. **绝对线程安全（Thread-safe）**：类的任何方法在多线程环境下都能正确执行
-
-3. **相对线程安全（Conditionally thread-safe）**：某些方法序列需要额外同步
-
-4. **线程兼容（Thread-compatible）**：类本身不是线程安全的，但可以通过正确同步变为安全
-
-5. **线程对立（Thread-hostile）**：无法在多线程环境下安全使用，即使加锁也不行
-
-### 线程安全的设计原则
-
-1. **减少共享**：尽量避免共享变量
-
-2. **使用不可变对象**：不可变对象天然线程安全
-
-3. **最小化同步范围**：同步代码块尽可能小
-
-4. **优先使用并发工具**：使用 java.util.concurrent 包中的工具类
-
-5. **正确使用锁**：避免死锁、活锁、饥饿等问题
-
-6. **优先考虑线程安全类**：如 ConcurrentHashMap 而不是 HashMap
-
-7. **文档化线程安全性**：在文档中明确说明类的线程安全性级别
-
-## 线程安全的集合
-
-Java 提供了多种线程安全的集合类：
-
-```java
-// 同步 Map
-Map<String, String> syncMap = Collections.synchronizedMap(new HashMap<>());
-
-// 并发 Map
-ConcurrentMap<String, String> concurrentMap = new ConcurrentHashMap<>();
-
-// 同步 List
-List<String> syncList = Collections.synchronizedList(new ArrayList<>());
-
-// 并发 List
-CopyOnWriteArrayList<String> cowList = new CopyOnWriteArrayList<>();
-
-// 阻塞队列
-BlockingQueue<Task> blockingQueue = new LinkedBlockingQueue<>(100);
-```
-
 ## 线程池
 
 ### 创建线程池
@@ -1038,66 +756,76 @@ List<Runnable> unfinishedTasks = executor.shutdownNow();
 boolean terminated = executor.awaitTermination(60, TimeUnit.SECONDS);
 ```
 
-## 面试题
+## 常见问题
 
-### yield、sleep、wait、notify 对锁的影响
+### Q1：线程方法对锁的影响?
 
-- `yield()`、`sleep()` 方法被调用后，**不会释放线程已持有的锁**。线程只是让出 CPU 执行权或进入休眠，但依然持有锁对象。
+下表总结了各种线程方法对锁的影响：
 
-- `wait()` 方法被调用时，**会释放当前线程持有的锁**，线程进入等待队列，等待被其他线程唤醒。被唤醒后会重新竞争锁，只有获得锁后才会继续执行 `wait()` 后的代码。
+| 方法 | 是否释放锁 | 说明 |
+|------|------------|------|
+| `yield()` | 否 | 线程让出 CPU 执行权，但依然持有锁对象 |
+| `sleep()` | 否 | 线程进入休眠状态，但依然持有锁对象 |
+| `wait()` | 是 | 释放当前线程持有的锁，进入等待队列<br>被唤醒后需重新竞争锁才能继续执行 |
+| `notify()/notifyAll()` | 否 | 只是唤醒等待队列中的线程<br>只有同步代码块执行完毕后才会释放锁 |
 
-- `notify()`/`notifyAll()` 方法被调用时，**不会立即释放锁**，只是唤醒等待队列中的线程。只有当前同步代码块执行完毕，线程自然退出同步块时，才会释放锁。
+> [!warning]注意
+> `notify()/notifyAll()` 通常应放在同步代码块的最后一行。
 
-- 因此，`notify()`/`notifyAll()` 通常放在同步代码块的最后一行。
+### Q2：为什么 wait 和 notify 必须在同步块中调用？
 
-### 为什么 wait 和 notify 必须在同步块中调用？
-
-- Java API 强制要求：`wait()`、`notify()`、`notifyAll()` 必须在持有对象监视器（即同步块或同步方法）时调用，否则会抛出 `IllegalMonitorStateException` 异常。
+Java API 强制要求：`wait()`、`notify()`、`notifyAll()` 必须在持有对象监视器（即同步块或同步方法）时调用，否则会抛出 `IllegalMonitorStateException` 异常。
 
 这是所有多线程环境的通用要求，保证线程间协作的正确性。
 
-**示例说明**
+#### 示例说明
 
-假设有一个生产者线程和一个消费者线程，生产者负责 `count++` 并 `notify()`，消费者负责 `wait()` 并 `count--`。
+假设有一个生产者线程和一个消费者线程：
 
-**错误用法（未加同步块）：**
+- 生产者负责 `count++` 并 `notify()`
+
+- 消费者负责 `wait()` 并 `count--`
+
+##### 错误用法（未加同步块）
 
 ```java
-// 生产者
-count++;
-notify();
+// 生产者线程
+count++;      // 操作共享变量
+notify();     // 唤醒等待的消费者线程 - 抛出 IllegalMonitorStateException
 
-// 消费者
+// 消费者线程
 while(count <= 0)
-    wait();
-count--;
+    wait();   // 等待生产者 - 抛出 IllegalMonitorStateException
+count--;      // 操作共享变量
 ```
-这样会抛出异常。
 
-**正确用法（加同步块）：**
+##### 正确用法（加同步块）
 
 ```java
+// 生产者线程
 synchronized(lock) {
-    count++;
-    lock.notify();
+    count++;           // 操作共享变量
+    lock.notify();     // 安全地唤醒等待的消费者线程
 }
 
+// 消费者线程
 synchronized(lock) {
-    while(count <= 0)
-        lock.wait();
-    count--;
+    while(count <= 0)  // 使用 while 循环检查条件（避免虚假唤醒）
+        lock.wait();   // 安全地等待生产者通知
+    count--;           // 操作共享变量
 }
 ```
 
-**关键点总结**
+#### 关键点总结
 
-- `wait()`、`notify()` 必须在同步块/同步方法中调用，且要持有对应对象的锁。
+- `wait()`、`notify()` 必须在同步块/同步方法中调用，且要持有对应对象的锁
 
 - 生产者和消费者的典型实现步骤：
 
-  - 生产者：1. `count++` 2. `notify()`
-
-  - 消费者：1. `wait()` 2. `count--`
+  | 角色 | 步骤 |
+  |------|------|
+  | 生产者 | 1. 获取锁 → 2. 更新共享变量 → 3. 通知等待线程 → 4. 释放锁 |
+  | 消费者 | 1. 获取锁 → 2. 检查条件并等待 → 3. 处理共享变量 → 4. 释放锁 |
 
 这样才能保证线程安全和协作的正确性。
 
