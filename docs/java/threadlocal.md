@@ -480,7 +480,7 @@ public class TransmittableThreadLocalExample {
 }
 ```
 
-## 常见面试题
+## 常见问题
 
 ### ThreadLocal 的实现原理是什么？
 
@@ -528,7 +528,11 @@ ThreadLocalMap 采用开放地址法解决哈希冲突。当出现冲突时，�
 ## 参考资料
 
 - [Java ThreadLocal Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html)
+
 - [Java Concurrency in Practice](https://jcip.net/)
+
 - [TransmittableThreadLocal GitHub](https://github.com/alibaba/transmittable-thread-local)
+
 - [深入理解 Java 虚拟机](https://book.douban.com/subject/34907497/)
+
 - [Java 并发编程实战](https://book.douban.com/subject/10484692/) 
