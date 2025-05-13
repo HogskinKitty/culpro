@@ -38,6 +38,7 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
         { text: '线程安全', link: 'thread-safety' },
         { text: 'ThreadLocal 详解', link: 'threadlocal' },
         { text: 'CAS 与 Atomic 原子操作', link: 'cas-atomic' },
+        { text: 'JUC 并发工具类应用场景详解', link: 'juc-in-practice' },
       ],
     },
     {
