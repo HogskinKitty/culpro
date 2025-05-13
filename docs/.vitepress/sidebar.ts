@@ -35,6 +35,7 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
       items: [
         { text: '线程与进程', link: 'thread-process' },
         { text: '线程基础', link: 'thread-basics' },
+        { text: '线程安全', link: 'thread-safety' },
         { text: 'ThreadLocal 详解', link: 'threadlocal' },
         { text: 'CAS 与 Atomic 原子操作', link: 'cas-atomic' },
       ],
