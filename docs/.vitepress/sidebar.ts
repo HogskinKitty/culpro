@@ -23,11 +23,6 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
     {
       text: '集合框架',
       items: [
-        // { text: '什么是集合框架', link: 'collection' },
-        // { text: 'ArrayList 源码分析', link: 'arraylist' },
-        // { text: 'LinkedList 源码分析', link: 'linkedlist' },
-        // { text: 'HashMap 源码分析', link: 'hashmap' },
-        // { text: 'ConcurrentHashMap 源码分析', link: 'concurrent-hashmap' },
       ],
     },
     {
@@ -38,19 +33,25 @@ function sidebarJava(): DefaultTheme.SidebarItem[] {
         { text: '线程安全', link: 'thread-safety' },
         { text: 'ThreadLocal 详解', link: 'threadlocal' },
         { text: 'CAS 与 Atomic 原子操作', link: 'cas-atomic' },
-        { text: 'JUC 并发工具类应用场景详解', link: 'juc-in-practice' },
+        { text: 'JUC 并发工具类详解', link: 'juc-in-practice' },
+        { text: 'AQS 与 ReentrantLock 源码剖析', link: 'aqs-reentrantlock' },
+        { text: 'ReentrantReadWriteLock 与 StampedLock 详解', link: 'readwrite-locks' },
+        { text: '并发容器原理与实战', link: 'concurrent-containers' },
+        { text: 'BlockingQueue 原理与实战', link: 'blocking-queue' },
+        { text: '线程池 ThreadPoolExecutor 源码剖析', link: 'thread-pool-executor' },
+        { text: 'ForkJoinPool 原理与实战', link: 'forkjoin-pool' },
+        { text: 'Java 内存模型详解', link: 'java-memory-model' },
+        { text: 'Java 管程模型详解', link: 'monitor-model' },
       ],
     },
     {
       text: '异常处理',
       items: [
-        // { text: '异常处理机制详解', link: 'java-exception-handling' },
       ],
     },
     {
       text: 'JVM',
       items: [
-        // { text: '示例内容', link: 'jvm' },
       ],
     },
   ]
