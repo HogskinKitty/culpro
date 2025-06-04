@@ -1,5 +1,5 @@
-# 构建 VitePress 站点并部署到火山引擎服务器
-name: Deploy VitePress to Volcengine
+# 构建 VitePress 站点并部署到京东云服务器
+name: Deploy VitePress to jdcloud
 
 on:
   # 在 master 分支收到推送时触发工作流
@@ -44,8 +44,8 @@ jobs:
       - name: Build with VitePress
         run: pnpm run docs:build
 
-      # 通过 SSH 部署到火山引擎服务器
-      - name: Deploy to Nginx Server of Volcengine
+      # 通过 SSH 部署到京东云服务器
+      - name: Deploy to Nginx Server of jdcloud
         uses: easingthemes/ssh-deploy@main
         env:
           # SSH 私钥，用于身份验证
