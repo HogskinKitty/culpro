@@ -11,7 +11,7 @@ export default defineConfig({
   lang: 'zh-CN',
 
   // 标题
-  title: "CULPRO",
+  title: "CULPRO-Java技术随笔",
 
   // 站点地图
   sitemap: {
